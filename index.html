@@ -23,6 +23,7 @@
             background-color: #141420;
             color: #e0dfe8;
             line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
         }
 
         code,
@@ -63,6 +64,7 @@
             font-weight: 700;
             margin-bottom: 20px;
             letter-spacing: -0.02em;
+            transition: color 0.5s ease;
         }
 
         .tagline {
@@ -70,6 +72,7 @@
             color: #b8b5c9;
             margin-bottom: 40px;
             font-weight: 400;
+            transition: color 0.5s ease;
         }
 
         .cta-buttons {
@@ -141,16 +144,13 @@
             font-size: 1.3em;
             font-weight: 600;
             margin-bottom: 10px;
+            transition: color 0.5s ease;
         }
 
         .feature-desc {
             color: #b8b5c9;
             line-height: 1.8;
-        }
-
-        .feature-desc {
-            color: #b8b5c9;
-            line-height: 1.8;
+            transition: color 0.5s ease;
         }
 
         /* Section Styling */
@@ -160,6 +160,7 @@
             border-radius: 12px;
             padding: 40px;
             margin-bottom: 40px;
+            transition: background-color 0.5s ease, border-color 0.5s ease;
         }
 
         .section-title {
@@ -169,12 +170,14 @@
             font-weight: 600;
             border-bottom: 2px solid #3e3e52;
             padding-bottom: 15px;
+            transition: color 0.5s ease, border-color 0.5s ease;
         }
 
         .section-subtitle {
             color: #b8b5c9;
             font-size: 1.1em;
             margin-bottom: 30px;
+            transition: color 0.5s ease;
         }
 
         .color-grid {
@@ -188,6 +191,7 @@
             border: 1px solid #3e3e52;
             border-radius: 6px;
             overflow: hidden;
+            transition: border-color 0.5s ease;
         }
 
         .color-swatch {
@@ -199,17 +203,20 @@
         .color-info {
             padding: 10px;
             background-color: #252535;
+            transition: background-color 0.5s ease;
         }
 
         .color-name {
             font-weight: bold;
             color: #e0dfe8;
             margin-bottom: 5px;
+            transition: color 0.5s ease;
         }
 
         .color-hex {
             color: #b8b5c9;
             font-size: 0.9em;
+            transition: color 0.5s ease;
         }
 
         .code-preview {
@@ -220,6 +227,7 @@
             overflow-x: auto;
             line-height: 1.8;
             font-family: 'JetBrains Mono', monospace;
+            transition: background-color 0.5s ease, border-color 0.5s ease;
         }
 
         .code-line {
@@ -234,51 +242,62 @@
             display: inline-block;
             width: 30px;
             text-align: right;
+            transition: color 0.5s ease;
         }
 
         .keyword {
             color: #bba6f7;
             font-weight: 600;
+            transition: color 0.5s ease;
         }
 
         .type {
             color: #91d7e3;
             font-style: italic;
+            transition: color 0.5s ease;
         }
 
         .string {
             color: #a6e3a1;
+            transition: color 0.5s ease;
         }
 
         .variable {
             color: #d5b8f5;
+            transition: color 0.5s ease;
         }
 
         .constant {
             color: #fab387;
             font-weight: 600;
+            transition: color 0.5s ease;
         }
 
         .function {
             color: #89b4fa;
             font-weight: 600;
+            transition: color 0.5s ease;
         }
 
         .comment {
             color: #8888a8;
             font-style: italic;
+            transition: color 0.5s ease;
         }
 
         .operator {
             color: #7dd4ed;
+            transition: color 0.5s ease;
         }
 
         .number {
             color: #fab387;
+            transition: color 0.5s ease;
         }
 
         .fg {
             color: #e0dfe8;
+            transition: color 0.5s ease;
         }
 
         .ui-examples {
@@ -292,12 +311,14 @@
             border: 1px solid #3e3e52;
             border-radius: 6px;
             padding: 15px;
+            transition: background-color 0.5s ease, border-color 0.5s ease;
         }
 
         .ui-title {
             color: #a8b5f5;
             margin-bottom: 10px;
             font-weight: bold;
+            transition: color 0.5s ease;
         }
 
         .selection {
@@ -314,30 +335,37 @@
 
         .diagnostic-error {
             color: #f5b5c8;
+            transition: color 0.5s ease;
         }
 
         .diagnostic-warning {
             color: #f5e5b8;
+            transition: color 0.5s ease;
         }
 
         .diagnostic-info {
             color: #a8b5f5;
+            transition: color 0.5s ease;
         }
 
         .diagnostic-hint {
             color: #7dd4ed;
+            transition: color 0.5s ease;
         }
 
         .git-add {
             color: #b5e5c5;
+            transition: color 0.5s ease;
         }
 
         .git-change {
             color: #f5e5b8;
+            transition: color 0.5s ease;
         }
 
         .git-delete {
             color: #f5b5c8;
+            transition: color 0.5s ease;
         }
 
         /* Footer */
@@ -345,6 +373,7 @@
             text-align: center;
             padding: 60px 20px 40px;
             color: #8e8a9e;
+            transition: color 0.5s ease;
         }
 
         footer a {
@@ -354,6 +383,49 @@
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Variant Selector */
+        .variant-selector {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 40px auto;
+            max-width: 700px;
+        }
+
+        .variant-btn {
+            padding: 12px 28px;
+            border: 2px solid #3e3e52;
+            border-radius: 8px;
+            background: #252535;
+            color: #b8b5c9;
+            font-weight: 600;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            text-align: center;
+        }
+
+        .variant-btn:hover {
+            border-color: #bba6f7;
+            transform: translateY(-2px);
+        }
+
+        .variant-btn.active {
+            background: #bba6f7;
+            color: #1e1e2e;
+            border-color: #bba6f7;
+            transition: all 0.5s ease;
+        }
+
+        .variant-desc {
+            display: block;
+            font-size: 0.85em;
+            font-weight: 400;
+            opacity: 0.8;
+            margin-top: 4px;
         }
     </style>
 </head>
@@ -392,6 +464,7 @@
             </div>
         </div>
 
+
         <!-- Features -->
         <div class="features">
             <div class="feature-card">
@@ -413,6 +486,27 @@
                     code.</p>
             </div>
         </div>
+
+        <!-- Variant Selector -->
+        <div class="variant-selector">
+            <button class="variant-btn active" data-variant="dusk">
+                Dusk
+                <span class="variant-desc">Original Dark</span>
+            </button>
+            <button class="variant-btn" data-variant="dawn">
+                Dawn
+                <span class="variant-desc">Light Theme</span>
+            </button>
+            <button class="variant-btn" data-variant="twilight">
+                Twilight
+                <span class="variant-desc">Deeper Dark</span>
+            </button>
+            <button class="variant-btn" data-variant="nebula">
+                Nebula
+                <span class="variant-desc">Muted Pastels</span>
+            </button>
+        </div>
+
 
         <!-- Color Palette -->
         <div class="section" id="palette">
@@ -604,7 +698,7 @@
         <!-- Footer -->
         <footer>
             <p>
-                <strong style="color: #bba6f7;">Zenith Colorscheme</strong> v1.0.0<br>
+                <strong style="color: #bba6f7;">Zenith Colorscheme</strong> v2.0.0<br>
                 Made with <span style="color: #f5b5c8;">♥</span> for developers who care about aesthetics<br>
                 <a href="https://github.com/samonide/zenith">GitHub</a> ·
                 <a href="https://github.com/samonide/zenith/issues">Issues</a> ·
@@ -612,6 +706,134 @@
             </p>
         </footer>
     </div>
+
+    <script>
+        // Variant switching functionality
+        const variantButtons = document.querySelectorAll('.variant-btn');
+        let currentVariant = 'dusk';
+
+        async function loadVariant(variantName) {
+            try {
+                const response = await fetch(`colors-${variantName}.json`);
+                const colorData = await response.json();
+                applyColorScheme(colorData);
+                currentVariant = variantName;
+            } catch (error) {
+                console.error('Error loading variant:', error);
+            }
+        }
+
+        function applyColorScheme(colorData) {
+            const root = document.documentElement;
+            const colors = colorData.colors;
+
+            // Apply base colors
+            document.body.style.backgroundColor = colors.base.bg;
+            document.body.style.color = colors.base.fg;
+
+            // Update all sections
+            document.querySelectorAll('.section').forEach(el => {
+                el.style.backgroundColor = colors.base.bg;
+                el.style.borderColor = colors.ui.border;
+            });
+
+            // Update code previews
+            document.querySelectorAll('.code-preview').forEach(el => {
+                el.style.backgroundColor = colors.base.bg;
+                el.style.borderColor = colors.ui.border;
+            });
+
+            // Update color boxes
+            document.querySelectorAll('.color-box').forEach(el => {
+                el.style.borderColor = colors.ui.border;
+            });
+
+            // Update color info sections
+            document.querySelectorAll('.color-info').forEach(el => {
+                el.style.backgroundColor = colors.base.bgAlt;
+            });
+
+            // Update feature cards
+            document.querySelectorAll('.feature-card').forEach(el => {
+                el.style.backgroundColor = colors.base.bgAlt;
+                el.style.borderColor = colors.ui.border;
+            });
+
+            // Update UI boxes
+            document.querySelectorAll('.ui-box').forEach(el => {
+                el.style.backgroundColor = colors.base.bgAlt;
+                el.style.borderColor = colors.ui.border;
+            });
+
+            // Update syntax highlighting
+            document.querySelectorAll('.keyword').forEach(el => el.style.color = colors.syntax.lavender);
+            document.querySelectorAll('.type').forEach(el => el.style.color = colors.syntax.sky);
+            document.querySelectorAll('.string').forEach(el => el.style.color = colors.syntax.green);
+            document.querySelectorAll('.variable').forEach(el => el.style.color = colors.syntax.purple);
+            document.querySelectorAll('.constant').forEach(el => el.style.color = colors.syntax.peach);
+            document.querySelectorAll('.function').forEach(el => el.style.color = colors.syntax.blue);
+            document.querySelectorAll('.comment').forEach(el => el.style.color = colors.ui.comment);
+            document.querySelectorAll('.operator').forEach(el => el.style.color = colors.syntax.cyan);
+            document.querySelectorAll('.number').forEach(el => el.style.color = colors.syntax.peach);
+            document.querySelectorAll('.fg').forEach(el => el.style.color = colors.base.fg);
+            document.querySelectorAll('.line-number').forEach(el => el.style.color = colors.base.fgDark);
+
+            // Update text colors
+            document.querySelector('h1').style.color = colors.syntax.lavender;
+            document.querySelectorAll('.section-title').forEach(el => el.style.color = colors.syntax.purple);
+            document.querySelectorAll('.feature-title').forEach(el => el.style.color = colors.syntax.purple);
+            document.querySelectorAll('.section-subtitle, .tagline, .feature-desc').forEach(el => el.style.color = colors.base.fgAlt);
+            document.querySelectorAll('.color-name').forEach(el => el.style.color = colors.base.fg);
+            document.querySelectorAll('.color-hex').forEach(el => el.style.color = colors.base.fgAlt);
+            document.querySelectorAll('.ui-title').forEach(el => el.style.color = colors.diagnostic.info);
+
+            // Update footer
+            document.querySelector('footer').style.color = colors.base.fgDark;
+
+            // Update diagnostic colors
+            document.querySelectorAll('.diagnostic-error').forEach(el => el.style.color = colors.diagnostic.error);
+            document.querySelectorAll('.diagnostic-warning').forEach(el => el.style.color = colors.diagnostic.warning);
+            document.querySelectorAll('.diagnostic-info').forEach(el => el.style.color = colors.diagnostic.info);
+            document.querySelectorAll('.diagnostic-hint').forEach(el => el.style.color = colors.diagnostic.hint);
+
+            // Update git colors
+            document.querySelectorAll('.git-add').forEach(el => el.style.color = colors.git.add);
+            document.querySelectorAll('.git-change').forEach(el => el.style.color = colors.git.change);
+            document.querySelectorAll('.git-delete').forEach(el => el.style.color = colors.git.delete);
+
+            // Update variant selector buttons for light theme
+            const isDark = colorData.type !== 'light';
+            document.querySelectorAll('.variant-btn').forEach(btn => {
+                const isActive = btn.classList.contains('active');
+                if (isActive) {
+                    // Active button always gets pastel purple
+                    btn.style.background = '#bba6f7';
+                    btn.style.borderColor = '#bba6f7';
+                    btn.style.color = '#1e1e2e';
+                } else {
+                    // Inactive buttons adapt to theme
+                    if (isDark) {
+                        btn.style.background = colors.base.bgAlt;
+                        btn.style.borderColor = colors.ui.border;
+                        btn.style.color = colors.base.fgAlt;
+                    } else {
+                        btn.style.background = '#ffffff';
+                        btn.style.borderColor = colors.ui.border;
+                        btn.style.color = colors.base.fg;
+                    }
+                }
+            });
+        }
+
+        variantButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                variantButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const variant = btn.dataset.variant;
+                loadVariant(variant);
+            });
+        });
+    </script>
 </body>
 
 </html>

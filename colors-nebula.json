@@ -1,0 +1,62 @@
+{
+    "name": "Zenith Nebula",
+    "variant": "nebula",
+    "type": "dark",
+    "description": "A sophisticated pastel dark theme inspired by cosmic aesthetics with muted, desaturated tones",
+    "author": "samonide",
+    "version": "2.0.0",
+    "colors": {
+        "base": {
+            "bg": "#1b1e28",
+            "bgAlt": "#21242e",
+            "bgHighlight": "#282c38",
+            "bgVisual": "#303442",
+            "bgSidebar": "#171a22",
+            "fg": "#a6accd",
+            "fgAlt": "#767c9d",
+            "fgDark": "#5a5f7d"
+        },
+        "syntax": {
+            "blue": "#91b4d5",
+            "cyan": "#7fc4ca",
+            "green": "#a3d9a5",
+            "purple": "#c4a7e7",
+            "orange": "#d6b58d",
+            "red": "#d67d7d",
+            "yellow": "#e6d5ac",
+            "pink": "#d9a0d9",
+            "lavender": "#a5b4e7",
+            "peach": "#dda896",
+            "mint": "#87d9bb",
+            "sky": "#89c4d4"
+        },
+        "ui": {
+            "border": "#303442",
+            "comment": "#6679a0",
+            "selection": "#2d3343",
+            "cursorLine": "#1f222c"
+        },
+        "git": {
+            "add": "#a3d9a5",
+            "change": "#e6d5ac",
+            "delete": "#d67d7d"
+        },
+        "diagnostic": {
+            "error": "#d67d7d",
+            "warning": "#e6d5ac",
+            "info": "#91b4d5",
+            "hint": "#7fc4ca"
+        }
+    },
+    "mapping": {
+        "keywords": "lavender",
+        "types": "sky",
+        "strings": "green",
+        "variables": "purple",
+        "constants": "orange",
+        "functions": "blue",
+        "comments": "comment",
+        "operators": "cyan",
+        "numbers": "orange"
+    }
+}

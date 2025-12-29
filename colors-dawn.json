@@ -1,0 +1,62 @@
+{
+    "name": "Zenith Dawn",
+    "variant": "dawn",
+    "type": "light",
+    "description": "A bright and airy light variant with gentle pastels for daytime coding",
+    "author": "samonide",
+    "version": "2.0.0",
+    "colors": {
+        "base": {
+            "bg": "#faf8f5",
+            "bgAlt": "#f0ede8",
+            "bgHighlight": "#e8e3dc",
+            "bgVisual": "#dfd9d0",
+            "bgSidebar": "#fdfbf8",
+            "fg": "#2e2a35",
+            "fgAlt": "#524c5c",
+            "fgDark": "#7a7486"
+        },
+        "syntax": {
+            "blue": "#3d6fd6",
+            "cyan": "#1e9eb3",
+            "green": "#4e9f3d",
+            "purple": "#9854d6",
+            "orange": "#d97706",
+            "red": "#d41f5c",
+            "yellow": "#c79316",
+            "pink": "#d63384",
+            "lavender": "#7c3fed",
+            "peach": "#d86422",
+            "mint": "#3d9970",
+            "sky": "#1a8fb8"
+        },
+        "ui": {
+            "border": "#d4cec5",
+            "comment": "#8b83a0",
+            "selection": "#d8d0e8",
+            "cursorLine": "#f3f0eb"
+        },
+        "git": {
+            "add": "#3d9970",
+            "change": "#c79316",
+            "delete": "#d41f5c"
+        },
+        "diagnostic": {
+            "error": "#d41f5c",
+            "warning": "#c79316",
+            "info": "#3d6fd6",
+            "hint": "#1a8fb8"
+        }
+    },
+    "mapping": {
+        "keywords": "lavender",
+        "types": "sky",
+        "strings": "green",
+        "variables": "purple",
+        "constants": "orange",
+        "functions": "blue",
+        "comments": "comment",
+        "operators": "cyan",
+        "numbers": "orange"
+    }
+}

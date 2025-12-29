@@ -4,8 +4,9 @@
 
 <img src="https://raw.githubusercontent.com/samonide/zenith/main/assets/logo.svg" alt="Zenith Logo" width="120"/>
 
-*A soothing, aesthetically pleasing dark colorscheme with soft pastels*  
-*Designed for comfortable long coding sessions with excellent readability*
+*A soothing, aesthetically pleasing colorscheme family with soft pastels*  
+*Designed for comfortable long coding sessions with excellent readability*  
+*Available in four beautiful variants: Dusk, Dawn, Twilight, and Nebula*
 
 <p align="center">
   <a href="https://samonide.github.io/zenith/">
@@ -19,8 +20,8 @@
   </a>
 </p>
 
-<img src="https://img.shields.io/badge/Version-1.0.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
-<img src="https://img.shields.io/badge/Type-Dark_Theme-d5b8f5?style=flat-square&labelColor=1e1e2e" alt="Theme Type"/>
+<img src="https://img.shields.io/badge/Version-2.0.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
+<img src="https://img.shields.io/badge/Variants-4-d5b8f5?style=flat-square&labelColor=1e1e2e" alt="Variants"/>
 
 </div>
 
@@ -42,11 +43,33 @@
 
 ---
 
+## 🎨 Variants
+
+Zenith comes in four carefully crafted variants:
+
+### 🌙 **Dusk** (Default)
+The original Zenith experience - a soft pastel dark theme perfect for extended coding sessions. Balanced contrast with soothing colors that won't strain your eyes.
+
+### ☀️ **Dawn**
+A bright and airy light variant for daytime coding. Features gentle pastels on a light background while maintaining the Zenith aesthetic.
+
+### 🌃 **Twilight**
+A deeper, moodier dark variant for those late-night coding sessions. Enhanced depth with richer tones and lower brightness.
+
+### 🌌 **Nebula**
+A sophisticated pastel dark theme inspired by cosmic aesthetics. Muted, desaturated tones with blue-purple undertones, reminiscent of Poimandres.
+
+---
+
 ## 📂 Structure
 
 ```
 zenith/
-├── colors.json         # Master color palette
+├── colors.json         # Master palette with variant info
+├── colors-dusk.json    # Dusk variant (default dark)
+├── colors-dawn.json    # Dawn variant (light)
+├── colors-twilight.json # Twilight variant (deeper dark)
+├── colors-nebula.json  # Nebula variant (muted pastel dark)
 ├── index.html          # Landing page & preview
 ├── README.md          # This file
 └── implementations/   # Editor-specific implementations (coming soon)

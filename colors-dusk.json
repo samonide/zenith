@@ -1,39 +1,10 @@
 {
-    "name": "Zenith",
-    "description": "A soothing soft pastel colorscheme designed for comfortable long coding sessions",
+    "name": "Zenith Dusk",
+    "variant": "dusk",
+    "type": "dark",
+    "description": "The original Zenith - a soothing soft pastel dark colorscheme designed for comfortable long coding sessions",
     "author": "samonide",
     "version": "2.0.0",
-    "variants": [
-        {
-            "name": "Dusk",
-            "variant": "dusk",
-            "type": "dark",
-            "description": "The original - a soft pastel dark theme",
-            "file": "colors-dusk.json",
-            "default": true
-        },
-        {
-            "name": "Dawn",
-            "variant": "dawn",
-            "type": "light",
-            "description": "A bright and airy light variant",
-            "file": "colors-dawn.json"
-        },
-        {
-            "name": "Twilight",
-            "variant": "twilight",
-            "type": "dark",
-            "description": "A deeper, moodier dark variant",
-            "file": "colors-twilight.json"
-        },
-        {
-            "name": "Nebula",
-            "variant": "nebula",
-            "type": "dark",
-            "description": "Sophisticated muted pastels with cosmic vibes",
-            "file": "colors-nebula.json"
-        }
-    ],
     "colors": {
         "base": {
             "bg": "#1e1e2e",

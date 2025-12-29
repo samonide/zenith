@@ -1,0 +1,62 @@
+{
+    "name": "Zenith Twilight",
+    "variant": "twilight",
+    "type": "dark",
+    "description": "A deeper, moodier variant for those late-night coding sessions",
+    "author": "samonide",
+    "version": "2.0.0",
+    "colors": {
+        "base": {
+            "bg": "#0d0d16",
+            "bgAlt": "#15151f",
+            "bgHighlight": "#1d1d2a",
+            "bgVisual": "#252536",
+            "bgSidebar": "#090911",
+            "fg": "#c8c5d8",
+            "fgAlt": "#9d98b3",
+            "fgDark": "#6e6983"
+        },
+        "syntax": {
+            "blue": "#6d8fff",
+            "cyan": "#4fc1e9",
+            "green": "#7fd97f",
+            "purple": "#c58dff",
+            "orange": "#ffb86c",
+            "red": "#ff7b9c",
+            "yellow": "#f9e2af",
+            "pink": "#ff8dc7",
+            "lavender": "#9d8dff",
+            "peach": "#ffad7a",
+            "mint": "#80e5b3",
+            "sky": "#6db8d4"
+        },
+        "ui": {
+            "border": "#2a2a3e",
+            "comment": "#6b6888",
+            "selection": "#252538",
+            "cursorLine": "#15151f"
+        },
+        "git": {
+            "add": "#7fd97f",
+            "change": "#f9e2af",
+            "delete": "#ff7b9c"
+        },
+        "diagnostic": {
+            "error": "#ff7b9c",
+            "warning": "#f9e2af",
+            "info": "#6d8fff",
+            "hint": "#4fc1e9"
+        }
+    },
+    "mapping": {
+        "keywords": "lavender",
+        "types": "sky",
+        "strings": "green",
+        "variables": "purple",
+        "constants": "orange",
+        "functions": "blue",
+        "comments": "comment",
+        "operators": "cyan",
+        "numbers": "orange"
+    }
+}

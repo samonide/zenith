@@ -1,0 +1,62 @@
+{
+    "name": "Zenith Retro",
+    "variant": "retro",
+    "type": "dark",
+    "description": "A nostalgic warm theme with vintage amber and sepia tones inspired by classic terminals",
+    "author": "samonide",
+    "version": "2.0.0",
+    "colors": {
+        "base": {
+            "bg": "#12110f",
+            "bgAlt": "#191715",
+            "bgHighlight": "#201e1b",
+            "bgVisual": "#282521",
+            "bgSidebar": "#0d0c0b",
+            "fg": "#cdc0ad",
+            "fgAlt": "#a49888",
+            "fgDark": "#6e665a"
+        },
+        "syntax": {
+            "blue": "#80a8cc",
+            "cyan": "#7ebfb8",
+            "green": "#a3c78f",
+            "purple": "#bba4d4",
+            "orange": "#daa577",
+            "red": "#d18686",
+            "yellow": "#d4bd80",
+            "pink": "#cd9ab8",
+            "lavender": "#a5a4d8",
+            "peach": "#e0a082",
+            "mint": "#8dc5a1",
+            "sky": "#8ab3ca"
+        },
+        "ui": {
+            "border": "#282521",
+            "comment": "#756d61",
+            "selection": "#201e1b",
+            "cursorLine": "#191715"
+        },
+        "git": {
+            "add": "#a5c285",
+            "change": "#e3c78a",
+            "delete": "#d88787"
+        },
+        "diagnostic": {
+            "error": "#d88787",
+            "warning": "#e3c78a",
+            "info": "#7da3c6",
+            "hint": "#6fb8b0"
+        }
+    },
+    "mapping": {
+        "keywords": "lavender",
+        "types": "sky",
+        "strings": "green",
+        "variables": "purple",
+        "constants": "orange",
+        "functions": "blue",
+        "comments": "comment",
+        "operators": "cyan",
+        "numbers": "orange"
+    }
+}

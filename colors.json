@@ -27,11 +27,25 @@
             "file": "colors-twilight.json"
         },
         {
-            "name": "Nebula",
-            "variant": "nebula",
+            "name": "Forest",
+            "variant": "forest",
             "type": "dark",
-            "description": "Sophisticated muted pastels with cosmic vibes",
-            "file": "colors-nebula.json"
+            "description": "Calm earthy green-gray tones",
+            "file": "colors-forest.json"
+        },
+        {
+            "name": "Retro",
+            "variant": "retro",
+            "type": "dark",
+            "description": "Nostalgic warm amber and sepia tones",
+            "file": "colors-retro.json"
+        },
+        {
+            "name": "Ocean",
+            "variant": "ocean",
+            "type": "dark",
+            "description": "Serene deep blue ocean depths",
+            "file": "colors-ocean.json"
         }
     ],
     "colors": {

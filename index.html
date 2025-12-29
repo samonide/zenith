@@ -10,7 +10,8 @@
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23bba6f7;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%2389b4fa;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2391d7e3;stop-opacity:1' /%3E%3C/linearGradient%3E%3ClinearGradient id='grad2' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%23d5b8f5;stop-opacity:0.7' /%3E%3Cstop offset='100%25' style='stop-color:%23a6e3a1;stop-opacity:0.5' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 100 40 L 160 140 L 40 140 Z' fill='url(%23grad1)' /%3E%3Cpath d='M 140 80 L 180 140 L 100 140 Z' fill='url(%23grad2)' opacity='0.8'/%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%23bba6f7' stroke-width='2' opacity='0.2'/%3E%3C/svg%3E">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://api.fontsource.org/v1/fonts/monaspace-neon/css?weights=400,500&display=swap');
 
         * {
             margin: 0;
@@ -20,7 +21,7 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: #141420;
+            background-color: #1a1d23;
             color: #e0dfe8;
             line-height: 1.6;
             transition: background-color 0.5s ease, color 0.5s ease;
@@ -28,7 +29,7 @@
 
         code,
         pre {
-            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            font-family: 'Monaspace Neon', 'Maple Mono', 'JetBrains Mono', 'Courier New', monospace;
         }
 
         .container {
@@ -226,7 +227,7 @@
             padding: 25px;
             overflow-x: auto;
             line-height: 1.8;
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Monaspace Neon', 'Maple Mono', 'JetBrains Mono', monospace;
             transition: background-color 0.5s ease, border-color 0.5s ease;
         }
 
@@ -388,24 +389,28 @@
         /* Variant Selector */
         .variant-selector {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             justify-content: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             margin: 40px auto;
-            max-width: 700px;
+            max-width: 100%;
+            padding: 10px 20px;
+            overflow-x: auto;
         }
 
         .variant-btn {
-            padding: 12px 28px;
+            padding: 12px 24px;
             border: 2px solid #3e3e52;
             border-radius: 8px;
             background: #252535;
             color: #b8b5c9;
             font-weight: 600;
-            font-size: 1em;
+            font-size: 0.95em;
             cursor: pointer;
             transition: all 0.5s ease;
             text-align: center;
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .variant-btn:hover {
@@ -422,10 +427,10 @@
 
         .variant-desc {
             display: block;
-            font-size: 0.85em;
+            font-size: 0.75em;
             font-weight: 400;
             opacity: 0.8;
-            margin-top: 4px;
+            margin-top: 3px;
         }
     </style>
 </head>
@@ -501,9 +506,17 @@
                 Twilight
                 <span class="variant-desc">Deeper Dark</span>
             </button>
-            <button class="variant-btn" data-variant="nebula">
-                Nebula
-                <span class="variant-desc">Muted Pastels</span>
+            <button class="variant-btn" data-variant="forest">
+                Forest
+                <span class="variant-desc">Earthy Dark</span>
+            </button>
+            <button class="variant-btn" data-variant="retro">
+                Retro
+                <span class="variant-desc">Vintage Warm</span>
+            </button>
+            <button class="variant-btn" data-variant="ocean">
+                Ocean
+                <span class="variant-desc">Deep Blue</span>
             </button>
         </div>
 

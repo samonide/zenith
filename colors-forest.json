@@ -1,0 +1,62 @@
+{
+    "name": "Zenith Forest",
+    "variant": "forest",
+    "type": "dark",
+    "description": "A calm dark theme with earthy green-gray tones for natural, focused coding",
+    "author": "samonide",
+    "version": "2.0.0",
+    "colors": {
+        "base": {
+            "bg": "#0f1412",
+            "bgAlt": "#151a18",
+            "bgHighlight": "#1c2220",
+            "bgVisual": "#232a28",
+            "bgSidebar": "#0b0f0d",
+            "fg": "#b0bfb8",
+            "fgAlt": "#7f918a",
+            "fgDark": "#5c6b65"
+        },
+        "syntax": {
+            "blue": "#7fb8d6",
+            "cyan": "#6ec9c0",
+            "green": "#8fd4a4",
+            "purple": "#b5a7d8",
+            "orange": "#d3b684",
+            "red": "#d47f7f",
+            "yellow": "#dbc987",
+            "pink": "#d19fcb",
+            "lavender": "#9ab7db",
+            "peach": "#d69c7c",
+            "mint": "#7ad9ba",
+            "sky": "#7abacc"
+        },
+        "ui": {
+            "border": "#232a28",
+            "comment": "#5f7771",
+            "selection": "#1c2220",
+            "cursorLine": "#151a18"
+        },
+        "git": {
+            "add": "#92d4a8",
+            "change": "#ddc785",
+            "delete": "#d67d7d"
+        },
+        "diagnostic": {
+            "error": "#d67d7d",
+            "warning": "#ddc785",
+            "info": "#7db3d1",
+            "hint": "#6fc4bb"
+        }
+    },
+    "mapping": {
+        "keywords": "lavender",
+        "types": "sky",
+        "strings": "green",
+        "variables": "purple",
+        "constants": "orange",
+        "functions": "blue",
+        "comments": "comment",
+        "operators": "cyan",
+        "numbers": "orange"
+    }
+}

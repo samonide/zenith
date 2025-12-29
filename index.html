@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith - A Soothing Pastel Colorscheme</title>
+    <meta name="description"
+        content="Zenith is a soothing, aesthetically pleasing dark colorscheme with soft pastels designed for comfortable long coding sessions">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23bba6f7;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%2389b4fa;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2391d7e3;stop-opacity:1' /%3E%3C/linearGradient%3E%3ClinearGradient id='grad2' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%23d5b8f5;stop-opacity:0.7' /%3E%3Cstop offset='100%25' style='stop-color:%23a6e3a1;stop-opacity:0.5' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 100 40 L 160 140 L 40 140 Z' fill='url(%23grad1)' /%3E%3Cpath d='M 140 80 L 180 140 L 100 140 Z' fill='url(%23grad2)' opacity='0.8'/%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%23bba6f7' stroke-width='2' opacity='0.2'/%3E%3C/svg%3E">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #141420;
+            color: #e0dfe8;
+            line-height: 1.6;
+        }
+
+        code,
+        pre {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            color: #bba6f7;
+            font-size: 4em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 1.5em;
+            color: #b8b5c9;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #bba6f7 0%, #89b4fa 100%);
+            color: #1e1e2e;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(187, 166, 247, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: #252535;
+            color: #e0dfe8;
+            border: 1px solid #3e3e52;
+        }
+
+        .btn-secondary:hover {
+            background-color: #2a2a3c;
+            border-color: #bba6f7;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background-color: #1e1e2e;
+            border: 1px solid #3e3e52;
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: #bba6f7;
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            color: #d5b8f5;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            color: #b8b5c9;
+            line-height: 1.8;
+        }
+
+        .feature-desc {
+            color: #b8b5c9;
+            line-height: 1.8;
+        }
+
+        /* Section Styling */
+        .section {
+            background-color: #1e1e2e;
+            border: 1px solid #3e3e52;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: #d5b8f5;
+            margin-bottom: 25px;
+            font-size: 2em;
+            font-weight: 600;
+            border-bottom: 2px solid #3e3e52;
+            padding-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #b8b5c9;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .color-box {
+            border: 1px solid #3e3e52;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .color-swatch {
+            height: 80px;
+            width: 100%;
+            border: 1px solid #3e3e52;
+        }
+
+        .color-info {
+            padding: 10px;
+            background-color: #252535;
+        }
+
+        .color-name {
+            font-weight: bold;
+            color: #e0dfe8;
+            margin-bottom: 5px;
+        }
+
+        .color-hex {
+            color: #b8b5c9;
+            font-size: 0.9em;
+        }
+
+        .code-preview {
+            background-color: #1e1e2e;
+            border: 1px solid #3e3e52;
+            border-radius: 8px;
+            padding: 25px;
+            overflow-x: auto;
+            line-height: 1.8;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .code-line {
+            display: block;
+            padding: 2px 0;
+        }
+
+        .line-number {
+            color: #8e8a9e;
+            margin-right: 20px;
+            user-select: none;
+            display: inline-block;
+            width: 30px;
+            text-align: right;
+        }
+
+        .keyword {
+            color: #bba6f7;
+            font-weight: 600;
+        }
+
+        .type {
+            color: #91d7e3;
+            font-style: italic;
+        }
+
+        .string {
+            color: #a6e3a1;
+        }
+
+        .variable {
+            color: #d5b8f5;
+        }
+
+        .constant {
+            color: #fab387;
+            font-weight: 600;
+        }
+
+        .function {
+            color: #89b4fa;
+            font-weight: 600;
+        }
+
+        .comment {
+            color: #8888a8;
+            font-style: italic;
+        }
+
+        .operator {
+            color: #7dd4ed;
+        }
+
+        .number {
+            color: #fab387;
+        }
+
+        .fg {
+            color: #e0dfe8;
+        }
+
+        .ui-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .ui-box {
+            background-color: #252535;
+            border: 1px solid #3e3e52;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .ui-title {
+            color: #a8b5f5;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .selection {
+            background-color: #3a3a52;
+            padding: 4px;
+            border-radius: 3px;
+        }
+
+        .cursor-line {
+            background-color: #28283a;
+            padding: 4px;
+            border-radius: 3px;
+        }
+
+        .diagnostic-error {
+            color: #f5b5c8;
+        }
+
+        .diagnostic-warning {
+            color: #f5e5b8;
+        }
+
+        .diagnostic-info {
+            color: #a8b5f5;
+        }
+
+        .diagnostic-hint {
+            color: #7dd4ed;
+        }
+
+        .git-add {
+            color: #b5e5c5;
+        }
+
+        .git-change {
+            color: #f5e5b8;
+        }
+
+        .git-delete {
+            color: #f5b5c8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 20px 40px;
+            color: #8e8a9e;
+        }
+
+        footer a {
+            color: #bba6f7;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="logo">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Mountain peak with gradient -->
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#bba6f7;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#89b4fa;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#91d7e3;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#d5b8f5;stop-opacity:0.7" />
+                            <stop offset="100%" style="stop-color:#a6e3a1;stop-opacity:0.5" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Main mountain -->
+                    <path d="M 100 40 L 160 140 L 40 140 Z" fill="url(#grad1)" />
+                    <!-- Side mountain -->
+                    <path d="M 140 80 L 180 140 L 100 140 Z" fill="url(#grad2)" opacity="0.8" />
+                    <!-- Base highlight -->
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="#bba6f7" stroke-width="2" opacity="0.2" />
+                </svg>
+            </div>
+            <h1>Zenith</h1>
+            <p class="tagline">A soothing pastel colorscheme for the mindful coder</p>
+            <div class="cta-buttons">
+                <a href="#palette" class="btn btn-primary">Explore Colors</a>
+                <a href="https://github.com/samonide/zenith" class="btn btn-secondary">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3 class="feature-title">Soft Pastels</h3>
+                <p class="feature-desc">Carefully crafted pastel colors that are easy on the eyes without compromising
+                    contrast and readability.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3 class="feature-title">Soothing Aesthetic</h3>
+                <p class="feature-desc">Designed for comfortable long coding sessions with a deep purple-gray background
+                    that's gentle and elegant.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3 class="feature-title">Universal Support</h3>
+                <p class="feature-desc">Available for VS Code, Neovim, and more editors. One colorscheme, everywhere you
+                    code.</p>
+            </div>
+        </div>
+
+        <!-- Color Palette -->
+        <div class="section" id="palette">
+            <h2 class="section-title">Color Palette</h2>
+
+            <h3 style="color: #bba6f7; margin: 40px 0 20px; font-size: 1.4em;">Base Colors</h3>
+            <div class="color-grid">
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #1e1e2e;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Background</div>
+                        <div class="color-hex">#1e1e2e</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #252535;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Background Alt</div>
+                        <div class="color-hex">#252535</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #e0dfe8;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Foreground</div>
+                        <div class="color-hex">#e0dfe8</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #b8b5c9;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Foreground Alt</div>
+                        <div class="color-hex">#b8b5c9</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #bba6f7; margin: 40px 0 20px; font-size: 1.4em;">Syntax Colors</h3>
+            <div class="color-grid">
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #bba6f7;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Lavender (Keywords)</div>
+                        <div class="color-hex">#bba6f7</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #91d7e3;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Sky (Types)</div>
+                        <div class="color-hex">#91d7e3</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #a6e3a1;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Green (Strings)</div>
+                        <div class="color-hex">#a6e3a1</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #d5b8f5;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Purple (Variables)</div>
+                        <div class="color-hex">#d5b8f5</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #fab387;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Peach (Constants)</div>
+                        <div class="color-hex">#fab387</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #89b4fa;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Blue (Functions)</div>
+                        <div class="color-hex">#89b4fa</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #f5e5b8;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Yellow (Warnings)</div>
+                        <div class="color-hex">#f5e5b8</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #f5b5c8;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Rose (Errors)</div>
+                        <div class="color-hex">#f5b5c8</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #7dd4ed;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Cyan (Operators)</div>
+                        <div class="color-hex">#7dd4ed</div>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="color-swatch" style="background-color: #a8b5f5;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Info Blue</div>
+                        <div class="color-hex">#a8b5f5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Examples -->
+        <div class="section">
+            <h2 class="section-title">See It In Action</h2>
+
+
+            <h3 style="color: #89b4fa; margin: 30px 0 15px; font-size: 1.2em;">JavaScript</h3>
+            <div class="code-preview">
+                <span class="code-line"><span class="line-number">1</span><span class="comment">// Calculate fibonacci
+                        sequence</span></span>
+                <span class="code-line"><span class="line-number">2</span><span class="keyword">function</span> <span
+                        class="function">fibonacci</span><span class="fg">(</span><span class="variable">n</span><span
+                        class="fg">) {</span></span>
+                <span class="code-line"><span class="line-number">3</span> <span class="keyword">if</span> <span
+                        class="fg">(</span><span class="variable">n</span> <span class="operator">
+                        <=< /span> <span class="number">1</span><span class="fg">) </span><span
+                                class="keyword">return</span> <span class="variable">n</span><span class="fg">;</span>
+                    </span>
+                    <span class="code-line"><span class="line-number">4</span> <span class="keyword">return</span> <span
+                            class="function">fibonacci</span><span class="fg">(</span><span class="variable">n</span>
+                        <span class="operator">-</span> <span class="number">1</span><span class="fg">) </span><span
+                            class="operator">+</span> <span class="function">fibonacci</span><span
+                            class="fg">(</span><span class="variable">n</span> <span class="operator">-</span> <span
+                            class="number">2</span><span class="fg">);</span></span>
+                    <span class="code-line"><span class="line-number">5</span><span class="fg">}</span></span>
+                    <span class="code-line"><span class="line-number">6</span></span>
+                    <span class="code-line"><span class="line-number">7</span><span class="keyword">const</span> <span
+                            class="constant">MAX_ITERATIONS</span> <span class="operator">=</span> <span
+                            class="number">10</span><span class="fg">;</span></span>
+                    <span class="code-line"><span class="line-number">8</span><span class="keyword">const</span> <span
+                            class="variable">result</span> <span class="operator">=</span> <span
+                            class="function">fibonacci</span><span class="fg">(</span><span
+                            class="constant">MAX_ITERATIONS</span><span class="fg">);</span></span>
+                    <span class="code-line"><span class="line-number">9</span><span class="variable">console</span><span
+                            class="fg">.</span><span class="function">log</span><span class="fg">(</span><span
+                            class="string">`Result: ${result}`</span><span class="fg">);</span></span>
+            </div>
+
+            <h3 style="color: #89b4fa; margin: 40px 0 15px; font-size: 1.2em;">Python</h3>
+            <div class="code-preview">
+                <span class="code-line"><span class="line-number">1</span><span class="keyword">from</span> <span
+                        class="type">typing</span> <span class="keyword">import</span> <span
+                        class="type">List</span></span>
+                <span class="code-line"><span class="line-number">2</span></span>
+                <span class="code-line"><span class="line-number">3</span><span class="keyword">class</span> <span
+                        class="type">DataProcessor</span><span class="fg">:</span></span>
+                <span class="code-line"><span class="line-number">4</span> <span class="comment">"""Process and analyze
+                        data efficiently"""</span></span>
+                <span class="code-line"><span class="line-number">5</span> </span>
+                <span class="code-line"><span class="line-number">6</span> <span class="keyword">def</span> <span
+                        class="function">__init__</span><span class="fg">(</span><span class="variable">self</span><span
+                        class="fg">, </span><span class="variable">data</span><span class="operator">:</span> <span
+                        class="type">List</span><span class="fg">[</span><span class="type">int</span><span
+                        class="fg">]):</span></span>
+                <span class="code-line"><span class="line-number">7</span> <span class="variable">self</span><span
+                        class="fg">.</span><span class="variable">data</span> <span class="operator">=</span> <span
+                        class="variable">data</span></span>
+                <span class="code-line"><span class="line-number">8</span> <span class="variable">self</span><span
+                        class="fg">.</span><span class="constant">THRESHOLD</span> <span class="operator">=</span> <span
+                        class="number">100</span></span>
+                <span class="code-line"><span class="line-number">9</span> </span>
+                <span class="code-line"><span class="line-number">10</span> <span class="keyword">def</span> <span
+                        class="function">process</span><span class="fg">(</span><span class="variable">self</span><span
+                        class="fg">) </span><span class="operator">-></span> <span class="type">List</span><span
+                        class="fg">[</span><span class="type">int</span><span class="fg">]:</span></span>
+                <span class="code-line"><span class="line-number">11</span> <span class="keyword">return</span> <span
+                        class="fg">[</span><span class="variable">x</span> <span class="operator">*</span> <span
+                        class="number">2</span> <span class="keyword">for</span> <span class="variable">x</span> <span
+                        class="keyword">in</span> <span class="variable">self</span><span class="fg">.</span><span
+                        class="variable">data</span> <span class="keyword">if</span> <span class="variable">x</span>
+                    <span class="operator">
+                        << /span> <span class="variable">self</span><span class="fg">.</span><span
+                                class="constant">THRESHOLD</span><span class="fg">]</span>
+                    </span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <strong style="color: #bba6f7;">Zenith Colorscheme</strong> v1.0.0<br>
+                Made with <span style="color: #f5b5c8;">♥</span> for developers who care about aesthetics<br>
+                <a href="https://github.com/samonide/zenith">GitHub</a> ·
+                <a href="https://github.com/samonide/zenith/issues">Issues</a> ·
+                <a href="https://github.com/samonide/zenith/blob/main/LICENSE">MIT License</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

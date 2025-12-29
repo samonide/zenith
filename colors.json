@@ -1,0 +1,61 @@
+{
+    "name": "Zenith",
+    "type": "dark",
+    "description": "A soothing soft pastel dark colorscheme designed for comfortable long coding sessions",
+    "author": "samonide",
+    "version": "0.2.0",
+    "colors": {
+        "base": {
+            "bg": "#1e1e2e",
+            "bgAlt": "#252535",
+            "bgHighlight": "#2d2d40",
+            "bgVisual": "#3a3a52",
+            "bgSidebar": "#1a1a28",
+            "fg": "#e0dfe8",
+            "fgAlt": "#b8b5c9",
+            "fgDark": "#8e8a9e"
+        },
+        "syntax": {
+            "blue": "#89b4fa",
+            "cyan": "#7dd4ed",
+            "green": "#a6e3a1",
+            "purple": "#d5b8f5",
+            "orange": "#ffd88a",
+            "red": "#f5b5c8",
+            "yellow": "#f5e5b8",
+            "pink": "#f5b8e5",
+            "lavender": "#bba6f7",
+            "peach": "#fab387",
+            "mint": "#b8f5d5",
+            "sky": "#91d7e3"
+        },
+        "ui": {
+            "border": "#3e3e52",
+            "comment": "#8888a8",
+            "selection": "#3d3d55",
+            "cursorLine": "#28283a"
+        },
+        "git": {
+            "add": "#b5e5c5",
+            "change": "#f5e5b8",
+            "delete": "#f5b5c8"
+        },
+        "diagnostic": {
+            "error": "#f5b5c8",
+            "warning": "#f5e5b8",
+            "info": "#a8b5f5",
+            "hint": "#a8d5e5"
+        }
+    },
+    "mapping": {
+        "keywords": "lavender",
+        "types": "sky",
+        "strings": "green",
+        "variables": "purple",
+        "constants": "orange",
+        "functions": "blue",
+        "comments": "comment",
+        "operators": "cyan",
+        "numbers": "orange"
+    }
+}

@@ -1,20 +1,48 @@
-# 🌄 Zenith Colorscheme
+<div align="center">
 
-A soothing, aesthetically pleasing dark colorscheme with soft pastels designed for comfortable long coding sessions with excellent readability.
+# ✨ Zenith Colorscheme
 
-**[🎨 Live Preview](https://samonide.github.io/zenith/)** | [GitHub Repository](https://github.com/samonide/zenith)
+<img src="https://raw.githubusercontent.com/samonide/zenith/main/assets/logo.svg" alt="Zenith Logo" width="120"/>
 
-This is the **universal colorscheme base** that can be ported to any editor or application.
+*A soothing, aesthetically pleasing dark colorscheme with soft pastels*  
+*Designed for comfortable long coding sessions with excellent readability*
 
-## 🎨 Philosophy
+<p align="center">
+  <a href="https://samonide.github.io/zenith/">
+    <img src="https://img.shields.io/badge/🌐_Live_Preview-4A5568?style=for-the-badge&labelColor=1e1e2e&color=bba6f7" alt="Live Preview"/>
+  </a>
+  <a href="https://github.com/samonide/zenith">
+    <img src="https://img.shields.io/badge/⭐_GitHub-4A5568?style=for-the-badge&labelColor=1e1e2e&color=89b4fa" alt="GitHub"/>
+  </a>
+  <a href="https://github.com/samonide/zenith/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-4A5568?style=for-the-badge&labelColor=1e1e2e&color=a6e3a1" alt="MIT License"/>
+  </a>
+</p>
 
-- **Deep, comfortable backgrounds** - Not pure black, easier on your eyes
-- **Soft pastel colors** - Gentle colors that don't strain
-- **High readability** - Proper contrast where it matters
-- **Subtle UI elements** - Keep focus on your code
-- **Soothing aesthetic** - Beautiful without being distracting
+<img src="https://img.shields.io/badge/Version-1.0.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
+<img src="https://img.shields.io/badge/Type-Dark_Theme-d5b8f5?style=flat-square&labelColor=1e1e2e" alt="Theme Type"/>
 
-## 📁 Structure
+</div>
+
+---
+
+## ✨ Philosophy
+
+<div align="center">
+
+**Universal colorscheme base** that can be ported to any editor or application
+
+</div>
+
+- 🌙 **Deep, comfortable backgrounds** — Not pure black, easier on your eyes
+- 🎨 **Soft pastel colors** — Gentle colors that don't strain
+- 📖 **High readability** — Proper contrast where it matters
+- 🔇 **Subtle UI elements** — Keep focus on your code
+- 💫 **Soothing aesthetic** — Beautiful without being distracting
+
+---
+
+## 📂 Structure
 
 ```
 zenith/
@@ -25,6 +53,8 @@ zenith/
     ├── vscode/       # VS Code theme
     └── neovim/       # Neovim colorscheme
 ```
+
+---
 
 ## 🎨 Color Palette
 
@@ -50,28 +80,45 @@ zenith/
 | `yellow` | `#f5e5b8` | Warnings |
 | `rose` | `#f5b5c8` | Errors, exceptions |
 
-## 🔍 Preview
+---
 
-Visit **[samonide.github.io/zenith](https://samonide.github.io/zenith/)** to see the colorscheme in action with live code examples!
+## 🚀 Preview
 
-Or open `index.html` in your browser locally.
+<div align="center">
 
-Open `preview.html` in your browser to see the colorscheme in action!
+### [**✨ View Live Demo →**](https://samonide.github.io/zenith/)
 
-## 🚀 Implementations
+Experience Zenith with live code examples in JavaScript, Python, and more!
 
-Coming soon! Zenith will be available for:
+*Or open `index.html` in your browser locally*
 
-- **VS Code** - Full theme with syntax highlighting and UI colors
-- **Neovim** - Lua-based colorscheme with TreeSitter support
-- More editors on the way...
+</div>
 
-## 📝 License
+---
 
-MIT License - see [LICENSE](LICENSE) for details
+## 📦 Implementations
 
-## 🤝 Contributing
+> 🚧 Coming soon! Zenith will be available for:
 
-Feel free to create implementations for other editors or suggest color improvements!
+- 🎯 **VS Code** — Full theme with syntax highlighting and UI colors
+- 🌙 **Neovim** — Lua-based colorscheme with TreeSitter support
+- ⚡ **More editors** — Help us expand to your favorite editor!
 
-Star ⭐ the repo if you like Zenith!
+---
+
+<div align="center">
+
+## 📄 License
+
+MIT License — see [LICENSE](LICENSE) for details
+
+## 💝 Contributing
+
+Feel free to create implementations for other editors or suggest color improvements!  
+**Star ⭐ the repo if you like Zenith!**
+
+---
+
+<sub>Made with 💜 by <a href="https://github.com/samonide">samonide</a></sub>
+
+</div>

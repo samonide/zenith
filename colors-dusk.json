@@ -4,7 +4,7 @@
     "type": "dark",
     "description": "The original Zenith - a soothing soft pastel dark colorscheme designed for comfortable long coding sessions",
     "author": "samonide",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "colors": {
         "base": {
             "bg": "#1e1e2e",

@@ -21,7 +21,7 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: #1a1d23;
+            background-color: #1e1e2e;
             color: #e0dfe8;
             line-height: 1.6;
             transition: background-color 0.5s ease, color 0.5s ease;
@@ -398,6 +398,108 @@
             overflow-x: auto;
         }
 
+        /* Mobile Floating Theme Button */
+        .mobile-theme-toggle {
+            display: none;
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #bba6f7 0%, #89b4fa 100%);
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(187, 166, 247, 0.4);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 24px;
+        }
+
+        .mobile-theme-toggle:active {
+            transform: scale(0.95);
+        }
+
+        .mobile-theme-toggle.active {
+            background: linear-gradient(135deg, #89b4fa 0%, #91d7e3 100%);
+        }
+
+        .mobile-theme-dropdown {
+            display: none;
+            position: fixed;
+            bottom: 90px;
+            right: 24px;
+            z-index: 999;
+            background: #252535;
+            border: 2px solid #3e3e52;
+            border-radius: 16px;
+            padding: 12px;
+            min-width: 200px;
+            max-height: 70vh;
+            overflow-y: auto;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            transform: translateY(20px) scale(0.9);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobile-theme-dropdown.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .mobile-theme-dropdown::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .mobile-theme-dropdown::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .mobile-theme-dropdown::-webkit-scrollbar-thumb {
+            background-color: #3e3e52;
+            border-radius: 3px;
+        }
+
+        .mobile-variant-btn {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 8px;
+            border: 2px solid #3e3e52;
+            border-radius: 10px;
+            background: #1e1e2e;
+            color: #b8b5c9;
+            font-weight: 600;
+            font-size: 0.95em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .mobile-variant-btn:last-child {
+            margin-bottom: 0;
+        }
+
+        .mobile-variant-btn:active {
+            transform: scale(0.97);
+        }
+
+        .mobile-variant-btn.active {
+            background: linear-gradient(135deg, #bba6f7 0%, #89b4fa 100%);
+            color: #1e1e2e;
+            border-color: #bba6f7;
+            box-shadow: 0 2px 8px rgba(187, 166, 247, 0.3);
+        }
+
+        .mobile-variant-btn .variant-desc {
+            font-size: 0.8em;
+            opacity: 0.8;
+        }
+
         .variant-btn {
             padding: 12px 24px;
             border: 2px solid #3e3e52;
@@ -431,6 +533,171 @@
             font-weight: 400;
             opacity: 0.8;
             margin-top: 3px;
+        }
+
+        /* Responsive Mobile & Tablet Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .hero {
+                padding: 50px 15px 40px;
+            }
+
+            .logo {
+                width: 80px;
+                height: 80px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .tagline {
+                font-size: 1.2em;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                padding: 12px 24px;
+                font-size: 1em;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .feature-card {
+                padding: 20px;
+            }
+
+            .section {
+                padding: 25px 20px;
+            }
+
+            .section-title {
+                font-size: 1.6em;
+            }
+
+            .color-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 12px;
+            }
+
+            .ui-examples {
+                grid-template-columns: 1fr;
+            }
+
+            .code-preview {
+                padding: 15px;
+                font-size: 0.9em;
+            }
+
+            .line-number {
+                margin-right: 10px;
+                width: 20px;
+            }
+
+            /* Hide desktop variant selector on mobile */
+            .variant-selector {
+                display: none;
+            }
+
+            /* Show mobile floating theme button */
+            .mobile-theme-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            footer {
+                padding: 40px 20px 30px;
+                font-size: 0.9em;
+            }
+        }
+
+        /* Extra small mobile devices */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .tagline {
+                font-size: 1em;
+            }
+
+            .feature-icon {
+                font-size: 2em;
+            }
+
+            .feature-title {
+                font-size: 1.1em;
+            }
+
+            .color-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .color-swatch {
+                height: 60px;
+            }
+
+            .section-title {
+                font-size: 1.4em;
+            }
+
+            .code-preview {
+                font-size: 0.85em;
+            }
+
+            .variant-btn {
+                min-width: 110px;
+                padding: 8px 16px;
+            }
+        }
+
+        /* Tablet landscape */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                padding: 20px 30px;
+            }
+
+            h1 {
+                font-size: 3.5em;
+            }
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .color-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+        }
+
+        /* Smooth animations for mobile */
+        @media (prefers-reduced-motion: no-preference) {
+            @media (max-width: 768px) {
+                .variant-btn {
+                    transition: all 0.3s ease;
+                }
+
+                .feature-card:hover {
+                    transform: translateY(-2px);
+                }
+
+                .variant-btn:active {
+                    transform: scale(0.95);
+                }
+            }
         }
     </style>
 </head>
@@ -492,7 +759,7 @@
             </div>
         </div>
 
-        <!-- Variant Selector -->
+        <!-- Variant Selector (Desktop) -->
         <div class="variant-selector">
             <button class="variant-btn active" data-variant="dusk">
                 Dusk
@@ -516,6 +783,39 @@
             </button>
             <button class="variant-btn" data-variant="ocean">
                 Ocean
+                <span class="variant-desc">Deep Blue</span>
+            </button>
+        </div>
+
+        <!-- Mobile Theme Toggle Button -->
+        <button class="mobile-theme-toggle" id="mobileThemeToggle" aria-label="Toggle theme selector">
+            🎨
+        </button>
+
+        <!-- Mobile Theme Dropdown -->
+        <div class="mobile-theme-dropdown" id="mobileThemeDropdown">
+            <button class="mobile-variant-btn active" data-variant="dusk" data-mobile="true">
+                <span>Dusk</span>
+                <span class="variant-desc">Original Dark</span>
+            </button>
+            <button class="mobile-variant-btn" data-variant="dawn" data-mobile="true">
+                <span>Dawn</span>
+                <span class="variant-desc">Light Theme</span>
+            </button>
+            <button class="mobile-variant-btn" data-variant="twilight" data-mobile="true">
+                <span>Twilight</span>
+                <span class="variant-desc">Deeper Dark</span>
+            </button>
+            <button class="mobile-variant-btn" data-variant="forest" data-mobile="true">
+                <span>Forest</span>
+                <span class="variant-desc">Earthy Dark</span>
+            </button>
+            <button class="mobile-variant-btn" data-variant="retro" data-mobile="true">
+                <span>Retro</span>
+                <span class="variant-desc">Vintage Warm</span>
+            </button>
+            <button class="mobile-variant-btn" data-variant="ocean" data-mobile="true">
+                <span>Ocean</span>
                 <span class="variant-desc">Deep Blue</span>
             </button>
         </div>
@@ -560,73 +860,73 @@
             <h3 style="color: #bba6f7; margin: 40px 0 20px; font-size: 1.4em;">Syntax Colors</h3>
             <div class="color-grid">
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #bba6f7;"></div>
+                    <div class="color-swatch" data-color="lavender" style="background-color: #bba6f7;"></div>
                     <div class="color-info">
                         <div class="color-name">Lavender (Keywords)</div>
-                        <div class="color-hex">#bba6f7</div>
+                        <div class="color-hex" data-color-hex="lavender">#bba6f7</div>
                     </div>
                 </div>
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #91d7e3;"></div>
+                    <div class="color-swatch" data-color="sky" style="background-color: #91d7e3;"></div>
                     <div class="color-info">
                         <div class="color-name">Sky (Types)</div>
-                        <div class="color-hex">#91d7e3</div>
+                        <div class="color-hex" data-color-hex="sky">#91d7e3</div>
                     </div>
                 </div>
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #a6e3a1;"></div>
+                    <div class="color-swatch" data-color="green" style="background-color: #a6e3a1;"></div>
                     <div class="color-info">
                         <div class="color-name">Green (Strings)</div>
-                        <div class="color-hex">#a6e3a1</div>
+                        <div class="color-hex" data-color-hex="green">#a6e3a1</div>
                     </div>
                 </div>
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #d5b8f5;"></div>
+                    <div class="color-swatch" data-color="purple" style="background-color: #d5b8f5;"></div>
                     <div class="color-info">
                         <div class="color-name">Purple (Variables)</div>
-                        <div class="color-hex">#d5b8f5</div>
+                        <div class="color-hex" data-color-hex="purple">#d5b8f5</div>
                     </div>
                 </div>
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #fab387;"></div>
+                    <div class="color-swatch" data-color="peach" style="background-color: #fab387;"></div>
                     <div class="color-info">
                         <div class="color-name">Peach (Constants)</div>
-                        <div class="color-hex">#fab387</div>
+                        <div class="color-hex" data-color-hex="peach">#fab387</div>
                     </div>
                 </div>
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #89b4fa;"></div>
+                    <div class="color-swatch" data-color="blue" style="background-color: #89b4fa;"></div>
                     <div class="color-info">
                         <div class="color-name">Blue (Functions)</div>
-                        <div class="color-hex">#89b4fa</div>
+                        <div class="color-hex" data-color-hex="blue">#89b4fa</div>
                     </div>
                 </div>
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #f5e5b8;"></div>
+                    <div class="color-swatch" data-color="yellow" style="background-color: #f5e5b8;"></div>
                     <div class="color-info">
                         <div class="color-name">Yellow (Warnings)</div>
-                        <div class="color-hex">#f5e5b8</div>
+                        <div class="color-hex" data-color-hex="yellow">#f5e5b8</div>
                     </div>
                 </div>
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #f5b5c8;"></div>
+                    <div class="color-swatch" data-color="red" style="background-color: #f5b5c8;"></div>
                     <div class="color-info">
                         <div class="color-name">Rose (Errors)</div>
-                        <div class="color-hex">#f5b5c8</div>
+                        <div class="color-hex" data-color-hex="red">#f5b5c8</div>
                     </div>
                 </div>
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #7dd4ed;"></div>
+                    <div class="color-swatch" data-color="cyan" style="background-color: #7dd4ed;"></div>
                     <div class="color-info">
                         <div class="color-name">Cyan (Operators)</div>
-                        <div class="color-hex">#7dd4ed</div>
+                        <div class="color-hex" data-color-hex="cyan">#7dd4ed</div>
                     </div>
                 </div>
                 <div class="color-box">
-                    <div class="color-swatch" style="background-color: #a8b5f5;"></div>
+                    <div class="color-swatch" data-color="info" style="background-color: #a8b5f5;"></div>
                     <div class="color-info">
                         <div class="color-name">Info Blue</div>
-                        <div class="color-hex">#a8b5f5</div>
+                        <div class="color-hex" data-color-hex="info">#a8b5f5</div>
                     </div>
                 </div>
             </div>
@@ -723,7 +1023,25 @@
     <script>
         // Variant switching functionality
         const variantButtons = document.querySelectorAll('.variant-btn');
+        const mobileVariantButtons = document.querySelectorAll('.mobile-variant-btn');
+        const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+        const mobileThemeDropdown = document.getElementById('mobileThemeDropdown');
         let currentVariant = 'dusk';
+
+        // Mobile theme toggle functionality
+        mobileThemeToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileThemeDropdown.classList.toggle('active');
+            mobileThemeToggle.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileThemeDropdown.contains(e.target) && !mobileThemeToggle.contains(e.target)) {
+                mobileThemeDropdown.classList.remove('active');
+                mobileThemeToggle.classList.remove('active');
+            }
+        });
 
         async function loadVariant(variantName) {
             try {
@@ -814,6 +1132,39 @@
             document.querySelectorAll('.git-change').forEach(el => el.style.color = colors.git.change);
             document.querySelectorAll('.git-delete').forEach(el => el.style.color = colors.git.delete);
 
+            // Update color palette swatches dynamically
+            document.querySelectorAll('[data-color]').forEach(swatch => {
+                const colorName = swatch.dataset.color;
+                let colorValue;
+
+                // Map color names to their values from the JSON
+                if (colorName === 'info') {
+                    colorValue = colors.diagnostic.info;
+                } else if (colors.syntax[colorName]) {
+                    colorValue = colors.syntax[colorName];
+                }
+
+                if (colorValue) {
+                    swatch.style.backgroundColor = colorValue;
+                }
+            });
+
+            // Update color hex text
+            document.querySelectorAll('[data-color-hex]').forEach(hexEl => {
+                const colorName = hexEl.dataset.colorHex;
+                let colorValue;
+
+                if (colorName === 'info') {
+                    colorValue = colors.diagnostic.info;
+                } else if (colors.syntax[colorName]) {
+                    colorValue = colors.syntax[colorName];
+                }
+
+                if (colorValue) {
+                    hexEl.textContent = colorValue;
+                }
+            });
+
             // Update variant selector buttons for light theme
             const isDark = colorData.type !== 'light';
             document.querySelectorAll('.variant-btn').forEach(btn => {
@@ -836,8 +1187,22 @@
                     }
                 }
             });
+
+            // Update mobile dropdown styling
+            mobileThemeDropdown.style.backgroundColor = colors.base.bgAlt;
+            mobileThemeDropdown.style.borderColor = colors.ui.border;
+
+            document.querySelectorAll('.mobile-variant-btn').forEach(btn => {
+                const isActive = btn.classList.contains('active');
+                if (!isActive) {
+                    btn.style.background = colors.base.bg;
+                    btn.style.borderColor = colors.ui.border;
+                    btn.style.color = colors.base.fgAlt;
+                }
+            });
         }
 
+        // Desktop variant buttons
         variantButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 variantButtons.forEach(b => b.classList.remove('active'));
@@ -846,6 +1211,29 @@
                 loadVariant(variant);
             });
         });
+
+        // Mobile variant buttons
+        mobileVariantButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                mobileVariantButtons.forEach(b => b.classList.remove('active'));
+                variantButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Sync with desktop buttons
+                const variant = btn.dataset.variant;
+                const desktopBtn = document.querySelector(`.variant-btn[data-variant="${variant}"]`);
+                if (desktopBtn) desktopBtn.classList.add('active');
+
+                loadVariant(variant);
+
+                // Close dropdown after selection
+                mobileThemeDropdown.classList.remove('active');
+                mobileThemeToggle.classList.remove('active');
+            });
+        });
+
+        // Load default theme (Dusk) on page load
+        loadVariant('dusk');
     </script>
 </body>
 

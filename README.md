@@ -20,7 +20,7 @@
   </a>
 </p>
 
-<img src="https://img.shields.io/badge/Version-2.0.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
+<img src="https://img.shields.io/badge/Version-3.0.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
 <img src="https://img.shields.io/badge/Variants-6-d5b8f5?style=flat-square&labelColor=1e1e2e" alt="Variants"/>
 
 </div>

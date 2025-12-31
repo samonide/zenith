@@ -4,17 +4,17 @@
     "type": "dark",
     "description": "A deeper, moodier variant for those late-night coding sessions",
     "author": "samonide",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "colors": {
         "base": {
-            "bg": "#0d0d16",
-            "bgAlt": "#15151f",
-            "bgHighlight": "#1d1d2a",
-            "bgVisual": "#252536",
-            "bgSidebar": "#090911",
-            "fg": "#c8c5d8",
-            "fgAlt": "#9d98b3",
-            "fgDark": "#6e6983"
+            "bg": "#0d0d18",
+            "bgAlt": "#141420",
+            "bgHighlight": "#1c1c2c",
+            "bgVisual": "#242438",
+            "bgSidebar": "#090912",
+            "fg": "#cac7db",
+            "fgAlt": "#a09bb6",
+            "fgDark": "#6f6a86"
         },
         "syntax": {
             "blue": "#6d8fff",

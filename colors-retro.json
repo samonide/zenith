@@ -4,48 +4,48 @@
     "type": "dark",
     "description": "A nostalgic warm theme with vintage amber and sepia tones inspired by classic terminals",
     "author": "samonide",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "colors": {
         "base": {
-            "bg": "#12110f",
-            "bgAlt": "#191715",
-            "bgHighlight": "#201e1b",
-            "bgVisual": "#282521",
-            "bgSidebar": "#0d0c0b",
-            "fg": "#cdc0ad",
-            "fgAlt": "#a49888",
-            "fgDark": "#6e665a"
+            "bg": "#1a1410",
+            "bgAlt": "#221b16",
+            "bgHighlight": "#2a221c",
+            "bgVisual": "#322a23",
+            "bgSidebar": "#15100c",
+            "fg": "#e0d3bf",
+            "fgAlt": "#baab96",
+            "fgDark": "#8a7d6e"
         },
         "syntax": {
-            "blue": "#80a8cc",
-            "cyan": "#7ebfb8",
-            "green": "#a3c78f",
-            "purple": "#bba4d4",
-            "orange": "#daa577",
-            "red": "#d18686",
-            "yellow": "#d4bd80",
-            "pink": "#cd9ab8",
-            "lavender": "#a5a4d8",
-            "peach": "#e0a082",
-            "mint": "#8dc5a1",
-            "sky": "#8ab3ca"
+            "blue": "#92b8e3",
+            "cyan": "#8dd4c8",
+            "green": "#aedb9e",
+            "purple": "#cdb5e5",
+            "orange": "#e9b882",
+            "red": "#e39a9a",
+            "yellow": "#e5cd90",
+            "pink": "#dbaac8",
+            "lavender": "#b8b3e8",
+            "peach": "#ecb592",
+            "mint": "#9cd9af",
+            "sky": "#9bc5db"
         },
         "ui": {
-            "border": "#282521",
-            "comment": "#756d61",
-            "selection": "#201e1b",
-            "cursorLine": "#191715"
+            "border": "#322a23",
+            "comment": "#8a7d6e",
+            "selection": "#2a221c",
+            "cursorLine": "#221b16"
         },
         "git": {
-            "add": "#a5c285",
-            "change": "#e3c78a",
-            "delete": "#d88787"
+            "add": "#aedb9e",
+            "change": "#e5cd90",
+            "delete": "#e39a9a"
         },
         "diagnostic": {
-            "error": "#d88787",
-            "warning": "#e3c78a",
-            "info": "#7da3c6",
-            "hint": "#6fb8b0"
+            "error": "#e39a9a",
+            "warning": "#e5cd90",
+            "info": "#92b8e3",
+            "hint": "#8dd4c8"
         }
     },
     "mapping": {

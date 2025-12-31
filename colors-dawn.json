@@ -4,17 +4,17 @@
     "type": "light",
     "description": "A bright and airy light variant with gentle pastels for daytime coding",
     "author": "samonide",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "colors": {
         "base": {
-            "bg": "#faf8f5",
-            "bgAlt": "#f0ede8",
-            "bgHighlight": "#e8e3dc",
-            "bgVisual": "#dfd9d0",
-            "bgSidebar": "#fdfbf8",
-            "fg": "#2e2a35",
-            "fgAlt": "#524c5c",
-            "fgDark": "#7a7486"
+            "bg": "#faf7f3",
+            "bgAlt": "#f0ebe6",
+            "bgHighlight": "#e8e1da",
+            "bgVisual": "#dfd7ce",
+            "bgSidebar": "#fdfaf6",
+            "fg": "#2d2833",
+            "fgAlt": "#514a58",
+            "fgDark": "#787284"
         },
         "syntax": {
             "blue": "#3d6fd6",

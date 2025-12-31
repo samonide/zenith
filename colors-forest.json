@@ -7,34 +7,34 @@
     "version": "3.0.0",
     "colors": {
         "base": {
-            "bg": "#0e1311",
-            "bgAlt": "#141918",
-            "bgHighlight": "#1a201f",
-            "bgVisual": "#202827",
-            "bgSidebar": "#0a0e0c",
-            "fg": "#b5c4bd",
+            "bg": "#1b1f1d",
+            "bgAlt": "#232726",
+            "bgHighlight": "#2a2e2c",
+            "bgVisual": "#323634",
+            "bgSidebar": "#171b19",
+            "fg": "#b3c2bb",
             "fgAlt": "#859890",
-            "fgDark": "#5e6e68"
+            "fgDark": "#607068"
         },
         "syntax": {
-            "blue": "#7ab8d4",
-            "cyan": "#5fbfb8",
-            "green": "#86d9a1",
-            "purple": "#b5a3d6",
-            "orange": "#d9b77d",
-            "red": "#d67575",
-            "yellow": "#d6c77e",
-            "pink": "#d396c4",
-            "lavender": "#98b3d9",
-            "peach": "#d99875",
-            "mint": "#72d9b5",
-            "sky": "#75b8c9"
+            "blue": "#80b8d0",
+            "cyan": "#6fbbb5",
+            "green": "#8dd49e",
+            "purple": "#b5a6d2",
+            "orange": "#d5b380",
+            "red": "#d08080",
+            "yellow": "#d2c485",
+            "pink": "#ce9cc0",
+            "lavender": "#9fb3d5",
+            "peach": "#d59880",
+            "mint": "#7fd5b2",
+            "sky": "#80b5c7"
         },
         "ui": {
-            "border": "#232a28",
-            "comment": "#5f7771",
-            "selection": "#1c2220",
-            "cursorLine": "#151a18"
+            "border": "#2a2e2c",
+            "comment": "#6a7d76",
+            "selection": "#222624",
+            "cursorLine": "#1f2321"
         },
         "git": {
             "add": "#92d4a8",

@@ -2,61 +2,61 @@
     "name": "Zenith Twilight",
     "variant": "twilight",
     "type": "dark",
-    "description": "A deeper, moodier variant for those late-night coding sessions",
+    "description": "A serene deep-night theme with rich purples and calming blues for peaceful late-night sessions",
     "author": "samonide",
-    "version": "3.0.0",
+    "version": "4.0.0",
     "colors": {
         "base": {
-            "bg": "#1d1d28",
-            "bgAlt": "#252532",
-            "bgHighlight": "#2d2d3c",
-            "bgVisual": "#353548",
-            "bgSidebar": "#191922",
-            "fg": "#c8c5d8",
-            "fgAlt": "#a09bb6",
-            "fgDark": "#706b88"
+            "bg": "#0f0e1a",
+            "bgAlt": "#151421",
+            "bgHighlight": "#1c1b2e",
+            "bgVisual": "#252339",
+            "bgSidebar": "#0a0911",
+            "fg": "#d5d3e5",
+            "fgAlt": "#a6a2c0",
+            "fgDark": "#6d6880"
         },
         "syntax": {
-            "blue": "#7d98f5",
-            "cyan": "#68bde0",
-            "green": "#8dd588",
-            "purple": "#bd96f5",
-            "orange": "#f5af72",
-            "red": "#f58899",
-            "yellow": "#f2dca8",
-            "pink": "#f592c0",
-            "lavender": "#b3a6f0",
-            "peach": "#f5a886",
-            "mint": "#88dcb0",
-            "sky": "#7db5cc"
+            "blue": "#7aa2ff",
+            "cyan": "#5fc8e8",
+            "green": "#82e8a1",
+            "purple": "#c89ef5",
+            "orange": "#f5b87a",
+            "red": "#ff879d",
+            "yellow": "#f5d99f",
+            "pink": "#f58fd5",
+            "lavender": "#b39ef5",
+            "peach": "#f5ad88",
+            "mint": "#7fe8c2",
+            "sky": "#6bb8d9"
         },
         "ui": {
-            "border": "#323240",
-            "comment": "#757090",
-            "selection": "#2a2a3a",
-            "cursorLine": "#212128"
+            "border": "#252238",
+            "comment": "#635d82",
+            "selection": "#211f32",
+            "cursorLine": "#15141f"
         },
         "git": {
-            "add": "#7fd97f",
-            "change": "#f9e2af",
-            "delete": "#ff7b9c"
+            "add": "#7ae89d",
+            "change": "#f5d99f",
+            "delete": "#ff879d"
         },
         "diagnostic": {
-            "error": "#ff7b9c",
-            "warning": "#f9e2af",
-            "info": "#6d8fff",
-            "hint": "#4fc1e9"
+            "error": "#ff879d",
+            "warning": "#f5d99f",
+            "info": "#7aa2ff",
+            "hint": "#5fc8e8"
         }
     },
     "mapping": {
         "keywords": "lavender",
-        "types": "sky",
+        "types": "cyan",
         "strings": "green",
         "variables": "purple",
-        "constants": "orange",
+        "constants": "peach",
         "functions": "blue",
         "comments": "comment",
-        "operators": "cyan",
-        "numbers": "orange"
+        "operators": "sky",
+        "numbers": "peach"
     }
 }

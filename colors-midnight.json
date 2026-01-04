@@ -1,0 +1,62 @@
+{
+    "name": "Zenith Midnight",
+    "variant": "midnight",
+    "type": "dark",
+    "description": "A mystical deep-space theme with rich blues, teals and cosmic purples",
+    "author": "samonide",
+    "version": "4.0.0",
+    "colors": {
+        "base": {
+            "bg": "#1b1e28",
+            "bgAlt": "#21242e",
+            "bgHighlight": "#282c38",
+            "bgVisual": "#303542",
+            "bgSidebar": "#171922",
+            "fg": "#e4f0fb",
+            "fgAlt": "#a6accd",
+            "fgDark": "#767c9d"
+        },
+        "syntax": {
+            "blue": "#91b4d5",
+            "cyan": "#5de4c7",
+            "green": "#a6f3b5",
+            "purple": "#d4a6f7",
+            "orange": "#ffc399",
+            "red": "#f87c8a",
+            "yellow": "#fffac2",
+            "pink": "#f5a4c7",
+            "lavender": "#b4a7f5",
+            "peach": "#faa07a",
+            "mint": "#7ce8dc",
+            "sky": "#7dcfff"
+        },
+        "ui": {
+            "border": "#2d3342",
+            "comment": "#505a7e",
+            "selection": "#303952",
+            "cursorLine": "#1f222c"
+        },
+        "git": {
+            "add": "#5de4c7",
+            "change": "#fffac2",
+            "delete": "#f87c8a"
+        },
+        "diagnostic": {
+            "error": "#f87c8a",
+            "warning": "#ffc399",
+            "info": "#91b4d5",
+            "hint": "#5de4c7"
+        }
+    },
+    "mapping": {
+        "keywords": "lavender",
+        "types": "sky",
+        "strings": "mint",
+        "variables": "fg",
+        "constants": "peach",
+        "functions": "blue",
+        "comments": "comment",
+        "operators": "cyan",
+        "numbers": "peach"
+    }
+}

@@ -4,7 +4,7 @@
     "type": "dark",
     "description": "A nostalgic warm theme with vintage amber and sepia tones inspired by classic terminals",
     "author": "samonide",
-    "version": "3.0.0",
+    "version": "4.0.0",
     "colors": {
         "base": {
             "bg": "#1e1d1b",

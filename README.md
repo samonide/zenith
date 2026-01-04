@@ -6,7 +6,7 @@
 
 *A soothing, aesthetically pleasing colorscheme family with soft pastels*  
 *Designed for comfortable long coding sessions with excellent readability*  
-*Available in six beautiful variants: Dusk, Dawn, Twilight, Forest, Retro, and Ocean*
+*Available in seven beautiful variants: Dusk, Dawn, Twilight, Midnight, Forest, Retro, and Ocean*
 
 <p align="center">
   <a href="https://samonide.github.io/zenith/">
@@ -20,8 +20,8 @@
   </a>
 </p>
 
-<img src="https://img.shields.io/badge/Version-3.0.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
-<img src="https://img.shields.io/badge/Variants-6-d5b8f5?style=flat-square&labelColor=1e1e2e" alt="Variants"/>
+<img src="https://img.shields.io/badge/Version-4.0.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
+<img src="https://img.shields.io/badge/Variants-7-d5b8f5?style=flat-square&labelColor=1e1e2e" alt="Variants"/>
 
 </div>
 
@@ -45,7 +45,7 @@
 
 ## 🎨 Variants
 
-Zenith comes in six carefully crafted variants:
+Zenith comes in seven carefully crafted variants:
 
 ### 🌙 **Dusk** (Default)
 The original Zenith experience - a soft pastel dark theme perfect for extended coding sessions. Balanced contrast with soothing colors that won't strain your eyes.
@@ -54,7 +54,10 @@ The original Zenith experience - a soft pastel dark theme perfect for extended c
 A bright and airy light variant for daytime coding. Features gentle pastels on a light background while maintaining the Zenith aesthetic.
 
 ### 🌃 **Twilight**
-A deeper, moodier dark variant for those late-night coding sessions. Enhanced depth with richer tones and lower brightness.
+A serene deep-night theme with much darker backgrounds and rich purples and calming blues for peaceful late-night sessions.
+
+### 🌌 **Midnight**
+A mystical deep-space theme with rich blues, teals and cosmic purples. Inspired by the poimandres aesthetic for an immersive coding experience.
 
 ### 🌲 **Forest**
 A calm dark theme with earthy green-gray tones. Perfect for natural, focused coding sessions with reduced eye strain.
@@ -64,26 +67,6 @@ A nostalgic warm theme with vintage amber and sepia tones. Inspired by classic C
 
 ### 🌊 **Ocean**
 A serene deep blue theme inspired by calm ocean depths. Cool-toned with vibrant syntax colors for peaceful, focused coding.
-
----
-
-## 📂 Structure
-
-```
-zenith/
-├── colors.json         # Master palette with variant info
-├── colors-dusk.json    # Dusk variant (default dark)
-├── colors-dawn.json    # Dawn variant (light)
-├── colors-twilight.json # Twilight variant (deeper dark)
-├── colors-forest.json  # Forest variant (earthy green-gray)
-├── colors-retro.json   # Retro variant (vintage warm)
-├── colors-ocean.json   # Ocean variant (deep blue)
-├── index.html          # Landing page & preview
-├── README.md          # This file
-└── implementations/   # Editor-specific implementations (coming soon)
-    ├── vscode/       # VS Code theme
-    └── neovim/       # Neovim colorscheme
-```
 
 ---
 
@@ -134,7 +117,7 @@ Each variant is stored in a JSON file with complete color definitions:
 
 ## 🎯 Features
 
-✨ **6 Unique Variants** — From light to dark, warm to cool  
+✨ **7 Unique Variants** — From light to dark, warm to cool  
 🎨 **Consistent Design** — Same aesthetic across all themes  
 👁️ **Eye Comfort** — Optimized for long coding sessions  
 🌈 **Rich Syntax** — Distinct colors for better code reading  
@@ -159,9 +142,12 @@ Experience Zenith with live code examples and interactive theme switching!
 
 ## 📦 Implementations
 
-> 🚧 Coming soon! Zenith will be available for:
+### Available Now
 
-- 🎯 **VS Code** — Full theme with syntax highlighting and UI colors
+- 🎯 **VS Code** — [zenith-vsc](https://github.com/samonide/zenith-vsc) - Full theme with syntax highlighting and UI colors
+
+### Coming Soon
+
 - 🌙 **Neovim** — Lua-based colorscheme with TreeSitter support
 - 🖥️ **Terminals** — iTerm2, Alacritty, Kitty, and more
 - ⚡ **More editors** — Help us expand to your favorite editor!

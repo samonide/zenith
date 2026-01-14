@@ -17,7 +17,7 @@
             "fgDark": "#767c9d"
         },
         "syntax": {
-            "blue": "#91b4d5",
+            "blue": "#add7ff",
             "cyan": "#5de4c7",
             "green": "#a6f3b5",
             "purple": "#d4a6f7",
@@ -27,8 +27,8 @@
             "pink": "#f5a4c7",
             "lavender": "#b4a7f5",
             "peach": "#faa07a",
-            "mint": "#7ce8dc",
-            "sky": "#7dcfff"
+            "mint": "#5de4c7",
+            "sky": "#add7ff"
         },
         "ui": {
             "border": "#2d3342",

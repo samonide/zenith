@@ -2,7 +2,7 @@
     "name": "Zenith",
     "description": "A soothing soft pastel colorscheme designed for comfortable long coding sessions",
     "author": "samonide",
-    "version": "4.0.0",
+    "version": "4.1.0",
     "variants": [
         {
             "name": "Dusk",
@@ -34,11 +34,11 @@
             "file": "colors-forest.json"
         },
         {
-            "name": "Retro",
-            "variant": "retro",
+            "name": "Monochrome",
+            "variant": "monochrome",
             "type": "dark",
-            "description": "Nostalgic warm amber and sepia tones",
-            "file": "colors-retro.json"
+            "description": "Minimal ultra-low contrast for pure focus in darkness",
+            "file": "colors-monochrome.json"
         },
         {
             "name": "Ocean",

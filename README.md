@@ -6,7 +6,7 @@
 
 *A soothing, aesthetically pleasing colorscheme family with soft pastels*  
 *Designed for comfortable long coding sessions with excellent readability*  
-*Available in seven beautiful variants: Dusk, Dawn, Twilight, Midnight, Forest, Retro, and Ocean*
+*Available in seven beautiful variants: Dusk, Dawn, Twilight, Midnight, Forest, Monochrome, and Ocean*
 
 <p align="center">
   <a href="https://samonide.github.io/zenith/">
@@ -20,7 +20,7 @@
   </a>
 </p>
 
-<img src="https://img.shields.io/badge/Version-4.0.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
+<img src="https://img.shields.io/badge/Version-4.1.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
 <img src="https://img.shields.io/badge/Variants-7-d5b8f5?style=flat-square&labelColor=1e1e2e" alt="Variants"/>
 
 </div>
@@ -62,8 +62,8 @@ A mystical deep-space theme with rich blues, teals and cosmic purples. Inspired 
 ### 🌲 **Forest**
 A calm dark theme with earthy green-gray tones. Perfect for natural, focused coding sessions with reduced eye strain.
 
-### 🕹️ **Retro**
-A nostalgic warm theme with vintage amber and sepia tones. Inspired by classic CRT terminals and vintage computing aesthetics.
+### ⬛ **Monochrome**
+A minimal ultra-low contrast monochromatic theme for pure focus in darkness. Designed for those who love to code in near-complete darkness with just enough differentiation to see code structure.
 
 ### 🌊 **Ocean**
 A serene deep blue theme inspired by calm ocean depths. Cool-toned with vibrant syntax colors for peaceful, focused coding.

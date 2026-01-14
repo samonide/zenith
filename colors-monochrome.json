@@ -1,0 +1,62 @@
+{
+    "name": "Zenith Monochrome",
+    "variant": "monochrome",
+    "type": "dark",
+    "description": "A minimal monochromatic theme with ultra-low contrast for pure focus in darkness",
+    "author": "samonide",
+    "version": "4.1.0",
+    "colors": {
+        "base": {
+            "bg": "#0d0d0d",
+            "bgAlt": "#121212",
+            "bgHighlight": "#1a1a1a",
+            "bgVisual": "#222222",
+            "bgSidebar": "#080808",
+            "fg": "#9a9a9a",
+            "fgAlt": "#6e6e6e",
+            "fgDark": "#4a4a4a"
+        },
+        "syntax": {
+            "blue": "#6079a8",
+            "cyan": "#5a8c94",
+            "green": "#608768",
+            "purple": "#7d6890",
+            "orange": "#90795c",
+            "red": "#90646b",
+            "yellow": "#90875c",
+            "pink": "#906890",
+            "lavender": "#6e6090",
+            "peach": "#907459",
+            "mint": "#609079",
+            "sky": "#5a7d90"
+        },
+        "ui": {
+            "border": "#1f1f1f",
+            "comment": "#4d4d4d",
+            "selection": "#1a1a1a",
+            "cursorLine": "#111111"
+        },
+        "git": {
+            "add": "#7a7a7a",
+            "change": "#757575",
+            "delete": "#6e6e6e"
+        },
+        "diagnostic": {
+            "error": "#888888",
+            "warning": "#828282",
+            "info": "#787878",
+            "hint": "#757575"
+        }
+    },
+    "mapping": {
+        "keywords": "lavender",
+        "types": "cyan",
+        "strings": "green",
+        "variables": "fg",
+        "constants": "peach",
+        "functions": "blue",
+        "comments": "comment",
+        "operators": "sky",
+        "numbers": "peach"
+    }
+}

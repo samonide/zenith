@@ -4,7 +4,7 @@
     "type": "dark",
     "description": "A serene deep blue theme inspired by calm ocean depths for peaceful coding",
     "author": "samonide",
-    "version": "4.1.0",
+    "version": "5.0.0",
     "colors": {
         "base": {
             "bg": "#1a1e24",
@@ -17,18 +17,18 @@
             "fgDark": "#6d7f91"
         },
         "syntax": {
-            "blue": "#7db0f5",
-            "cyan": "#66cede",
-            "green": "#7de398",
-            "purple": "#bda6f5",
-            "orange": "#f5a372",
-            "red": "#f57a8a",
-            "yellow": "#f5c075",
-            "pink": "#f590bf",
-            "lavender": "#a8aef5",
-            "peach": "#f5a684",
-            "mint": "#7de3bf",
-            "sky": "#7dc2f5"
+            "blue": "#6eb0ff",
+            "cyan": "#5dced8",
+            "green": "#6de390",
+            "purple": "#ad96f5",
+            "orange": "#f5935c",
+            "red": "#f56a7a",
+            "yellow": "#f5b065",
+            "pink": "#f580af",
+            "lavender": "#989ef5",
+            "peach": "#f59674",
+            "mint": "#6de3af",
+            "sky": "#6eb2f5"
         },
         "ui": {
             "border": "#343940",
@@ -49,14 +49,14 @@
         }
     },
     "mapping": {
-        "keywords": "lavender",
+        "keywords": "cyan",
         "types": "sky",
-        "strings": "green",
-        "variables": "purple",
-        "constants": "orange",
+        "strings": "mint",
+        "variables": "lavender",
+        "constants": "yellow",
         "functions": "blue",
         "comments": "comment",
-        "operators": "cyan",
-        "numbers": "orange"
+        "operators": "green",
+        "numbers": "peach"
     }
 }

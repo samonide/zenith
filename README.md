@@ -6,7 +6,7 @@
 
 *A soothing, aesthetically pleasing colorscheme family with soft pastels*  
 *Designed for comfortable long coding sessions with excellent readability*  
-*Available in seven beautiful variants: Dusk, Dawn, Twilight, Midnight, Forest, Monochrome, and Ocean*
+*Available in seven beautiful variants: Dusk, Dawn, Twilight, Aurora, Forest, Monochrome, and Ocean*
 
 <p align="center">
   <a href="https://samonide.github.io/zenith/">
@@ -20,7 +20,7 @@
   </a>
 </p>
 
-<img src="https://img.shields.io/badge/Version-4.1.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
+<img src="https://img.shields.io/badge/Version-5.0.0-fab387?style=flat-square&labelColor=1e1e2e" alt="Version"/>
 <img src="https://img.shields.io/badge/Variants-7-d5b8f5?style=flat-square&labelColor=1e1e2e" alt="Variants"/>
 
 </div>
@@ -37,6 +37,7 @@
 
 - 🌙 **Deep, comfortable backgrounds** — Not pure black, easier on your eyes
 - 🎨 **Soft pastel colors** — Gentle colors that don't strain
+- 🎯 **Unique syntax per theme** — Each variant has distinct color mappings for variety
 - 📖 **High readability** — Proper contrast where it matters
 - 🔇 **Subtle UI elements** — Keep focus on your code
 - 💫 **Soothing aesthetic** — Beautiful without being distracting
@@ -45,28 +46,28 @@
 
 ## 🎨 Variants
 
-Zenith comes in seven carefully crafted variants:
+Zenith comes in seven carefully crafted variants, each with **unique syntax color mappings** tailored to their aesthetic:
 
 ### 🌙 **Dusk** (Default)
-The original Zenith experience - a soft pastel dark theme perfect for extended coding sessions. Balanced contrast with soothing colors that won't strain your eyes.
+The original Zenith experience - a soft pastel dark theme perfect for extended coding sessions. Balanced contrast with classic pastel syntax colors that won't strain your eyes.
 
 ### ☀️ **Dawn**
-A bright and airy light variant for daytime coding. Features gentle pastels on a light background while maintaining the Zenith aesthetic.
+A bright and airy light variant for daytime coding. Features warm, vibrant daytime pastels with golden yellows and earthy tones on a light background.
 
 ### 🌃 **Twilight**
-A serene deep-night theme with much darker backgrounds and rich purples and calming blues for peaceful late-night sessions.
+A serene deep-night theme with darker backgrounds and deeper, moodier purples and mauves for peaceful late-night sessions.
 
-### 🌌 **Midnight**
-A mystical deep-space theme with rich blues, teals and cosmic purples. Inspired by the poimandres aesthetic for an immersive coding experience.
+### ✨ **Aurora**
+Soft northern lights theme with gentle teals, soft pinks, and calm purples. Inspired by the aurora borealis for a serene, magical coding experience.
 
 ### 🌲 **Forest**
-A calm dark theme with earthy green-gray tones. Perfect for natural, focused coding sessions with reduced eye strain.
+A calm dark theme with earthy green-gray tones and natural syntax colors. Perfect for natural, focused coding sessions with reduced eye strain.
 
 ### ⬛ **Monochrome**
-A minimal ultra-low contrast monochromatic theme for pure focus in darkness. Designed for those who love to code in near-complete darkness with just enough differentiation to see code structure.
+A minimal ultra-low contrast theme with refined grayscale and subtle color hints. Designed for pure focus with just enough differentiation to see code structure.
 
 ### 🌊 **Ocean**
-A serene deep blue theme inspired by calm ocean depths. Cool-toned with vibrant syntax colors for peaceful, focused coding.
+A serene deep blue theme inspired by calm ocean depths. Cool aquatic blues and teals create a cohesive, peaceful coding environment.
 
 ---
 
@@ -98,8 +99,8 @@ A serene deep blue theme inspired by calm ocean depths. Cool-toned with vibrant 
 
 ### Try it Out
 1. **Live Preview**: Visit [samonide.github.io/zenith](https://samonide.github.io/zenith/)
-2. **Switch Variants**: Click the buttons to see all 6 themes
-3. **Choose Your Favorite**: Pick the one that suits your workflow
+2. **Switch Variants**: Click the buttons to see all 7 themes with unique syntax colors
+3. **Choose Your Favorite**: Pick the one that suits your workflow and aesthetic preference
 
 ### Use the Colors
 Each variant is stored in a JSON file with complete color definitions:

@@ -4,7 +4,7 @@
     "type": "light",
     "description": "A bright and airy light variant with gentle pastels for daytime coding",
     "author": "samonide",
-    "version": "4.1.0",
+    "version": "5.0.0",
     "colors": {
         "base": {
             "bg": "#faf7f3",
@@ -17,18 +17,18 @@
             "fgDark": "#787284"
         },
         "syntax": {
-            "blue": "#3d6fd6",
-            "cyan": "#1e9eb3",
-            "green": "#4e9f3d",
-            "purple": "#9854d6",
-            "orange": "#d97706",
-            "red": "#d41f5c",
-            "yellow": "#c79316",
-            "pink": "#d63384",
-            "lavender": "#7c3fed",
-            "peach": "#d86422",
-            "mint": "#3d9970",
-            "sky": "#1a8fb8"
+            "blue": "#4577d6",
+            "cyan": "#2aa6b8",
+            "green": "#52a845",
+            "purple": "#a554d6",
+            "orange": "#e88a2f",
+            "red": "#d4325c",
+            "yellow": "#d9a316",
+            "pink": "#d6458a",
+            "lavender": "#8b52ed",
+            "peach": "#e87532",
+            "mint": "#45a878",
+            "sky": "#2898b8"
         },
         "ui": {
             "border": "#d4cec5",
@@ -49,14 +49,14 @@
         }
     },
     "mapping": {
-        "keywords": "lavender",
-        "types": "sky",
+        "keywords": "orange",
+        "types": "cyan",
         "strings": "green",
-        "variables": "purple",
-        "constants": "orange",
+        "variables": "pink",
+        "constants": "peach",
         "functions": "blue",
         "comments": "comment",
-        "operators": "cyan",
-        "numbers": "orange"
+        "operators": "yellow",
+        "numbers": "peach"
     }
 }

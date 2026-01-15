@@ -1,0 +1,62 @@
+{
+    "name": "Zenith Aurora",
+    "variant": "aurora",
+    "type": "dark",
+    "description": "Soft northern lights - gentle teals, soft pinks, and calm purples for serene coding",
+    "author": "samonide",
+    "version": "5.0.0",
+    "colors": {
+        "base": {
+            "bg": "#1a1e24",
+            "bgAlt": "#1f232a",
+            "bgHighlight": "#252a32",
+            "bgVisual": "#2d323a",
+            "bgSidebar": "#161a1f",
+            "fg": "#d8e5e8",
+            "fgAlt": "#a8bcc2",
+            "fgDark": "#7a8d93"
+        },
+        "syntax": {
+            "blue": "#9fc5e8",
+            "cyan": "#96d6d0",
+            "green": "#a8dfc5",
+            "purple": "#c8b5e8",
+            "orange": "#e8c4a0",
+            "red": "#e8a5b8",
+            "yellow": "#e8d8b0",
+            "pink": "#e8b5d5",
+            "lavender": "#b8aee8",
+            "peach": "#e8b8a0",
+            "mint": "#a0e8c8",
+            "sky": "#a0d0e8"
+        },
+        "ui": {
+            "border": "#2a3038",
+            "comment": "#6a8088",
+            "selection": "#252e35",
+            "cursorLine": "#1d2228"
+        },
+        "git": {
+            "add": "#a8dfc5",
+            "change": "#e8d8b0",
+            "delete": "#e8a5b8"
+        },
+        "diagnostic": {
+            "error": "#e8a5b8",
+            "warning": "#e8c4a0",
+            "info": "#9fc5e8",
+            "hint": "#96d6d0"
+        }
+    },
+    "mapping": {
+        "keywords": "pink",
+        "types": "lavender",
+        "strings": "mint",
+        "variables": "sky",
+        "constants": "peach",
+        "functions": "cyan",
+        "comments": "comment",
+        "operators": "purple",
+        "numbers": "yellow"
+    }
+}

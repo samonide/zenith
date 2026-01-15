@@ -4,7 +4,7 @@
     "type": "dark",
     "description": "A serene deep-night theme with rich purples and calming blues for peaceful late-night sessions",
     "author": "samonide",
-    "version": "4.1.0",
+    "version": "5.0.0",
     "colors": {
         "base": {
             "bg": "#0f1014",
@@ -17,18 +17,18 @@
             "fgDark": "#6d6880"
         },
         "syntax": {
-            "blue": "#5a7dbd",
-            "cyan": "#4a9aae",
-            "green": "#5fad77",
-            "purple": "#9278b8",
-            "orange": "#b88c5f",
-            "red": "#bd6573",
-            "yellow": "#b8a075",
-            "pink": "#b86f9f",
-            "lavender": "#8476b8",
-            "peach": "#b8826a",
-            "mint": "#5fad92",
-            "sky": "#5290a3"
+            "blue": "#6a8fc8",
+            "cyan": "#5aa8bd",
+            "green": "#6fbd87",
+            "purple": "#a888c8",
+            "orange": "#c89c6f",
+            "red": "#c87583",
+            "yellow": "#c8b085",
+            "pink": "#c87faf",
+            "lavender": "#9486c8",
+            "peach": "#c8927a",
+            "mint": "#6fbda2",
+            "sky": "#62a0b3"
         },
         "ui": {
             "border": "#22242a",
@@ -49,12 +49,12 @@
         }
     },
     "mapping": {
-        "keywords": "lavender",
-        "types": "cyan",
-        "strings": "green",
-        "variables": "purple",
-        "constants": "peach",
-        "functions": "blue",
+        "keywords": "purple",
+        "types": "pink",
+        "strings": "mint",
+        "variables": "lavender",
+        "constants": "yellow",
+        "functions": "cyan",
         "comments": "comment",
         "operators": "sky",
         "numbers": "peach"

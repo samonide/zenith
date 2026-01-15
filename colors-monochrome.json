@@ -4,31 +4,31 @@
     "type": "dark",
     "description": "A minimal monochromatic theme with ultra-low contrast for pure focus in darkness",
     "author": "samonide",
-    "version": "4.1.0",
+    "version": "5.0.0",
     "colors": {
         "base": {
-            "bg": "#0d0d0d",
-            "bgAlt": "#121212",
-            "bgHighlight": "#1a1a1a",
-            "bgVisual": "#222222",
-            "bgSidebar": "#080808",
-            "fg": "#9a9a9a",
-            "fgAlt": "#6e6e6e",
-            "fgDark": "#4a4a4a"
+            "bg": "#1a1a1a",
+            "bgAlt": "#1f1f1f",
+            "bgHighlight": "#252525",
+            "bgVisual": "#2d2d2d",
+            "bgSidebar": "#151515",
+            "fg": "#a8a8a8",
+            "fgAlt": "#7a7a7a",
+            "fgDark": "#565656"
         },
         "syntax": {
-            "blue": "#6079a8",
-            "cyan": "#5a8c94",
-            "green": "#608768",
-            "purple": "#7d6890",
-            "orange": "#90795c",
-            "red": "#90646b",
-            "yellow": "#90875c",
-            "pink": "#906890",
-            "lavender": "#6e6090",
-            "peach": "#907459",
-            "mint": "#609079",
-            "sky": "#5a7d90"
+            "blue": "#7589a8",
+            "cyan": "#6a8c94",
+            "green": "#708768",
+            "purple": "#8d7890",
+            "orange": "#90895c",
+            "red": "#90747b",
+            "yellow": "#90975c",
+            "pink": "#907890",
+            "lavender": "#7e7090",
+            "peach": "#908459",
+            "mint": "#709079",
+            "sky": "#6a8d90"
         },
         "ui": {
             "border": "#1f1f1f",
@@ -49,14 +49,14 @@
         }
     },
     "mapping": {
-        "keywords": "lavender",
+        "keywords": "blue",
         "types": "cyan",
         "strings": "green",
         "variables": "fg",
-        "constants": "peach",
-        "functions": "blue",
+        "constants": "yellow",
+        "functions": "purple",
         "comments": "comment",
-        "operators": "sky",
+        "operators": "fgAlt",
         "numbers": "peach"
     }
 }

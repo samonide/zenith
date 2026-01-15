@@ -4,7 +4,7 @@
     "type": "dark",
     "description": "The original Zenith - a soothing soft pastel dark colorscheme designed for comfortable long coding sessions",
     "author": "samonide",
-    "version": "4.1.0",
+    "version": "5.0.0",
     "colors": {
         "base": {
             "bg": "#1e1e2e",
@@ -20,14 +20,14 @@
             "blue": "#89b4fa",
             "cyan": "#7dd4ed",
             "green": "#a6e3a1",
-            "purple": "#d5b8f5",
-            "orange": "#ffd88a",
-            "red": "#f5b5c8",
-            "yellow": "#f5e5b8",
-            "pink": "#f5b8e5",
+            "purple": "#cba6f7",
+            "orange": "#ffc882",
+            "red": "#f5a5c8",
+            "yellow": "#f5e0a8",
+            "pink": "#f5a8d5",
             "lavender": "#bba6f7",
             "peach": "#fab387",
-            "mint": "#b8f5d5",
+            "mint": "#a8f5d5",
             "sky": "#91d7e3"
         },
         "ui": {
@@ -52,11 +52,11 @@
         "keywords": "lavender",
         "types": "sky",
         "strings": "green",
-        "variables": "purple",
-        "constants": "orange",
+        "variables": "pink",
+        "constants": "peach",
         "functions": "blue",
         "comments": "comment",
         "operators": "cyan",
-        "numbers": "orange"
+        "numbers": "peach"
     }
 }

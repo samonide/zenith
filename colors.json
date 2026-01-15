@@ -2,7 +2,7 @@
     "name": "Zenith",
     "description": "A soothing soft pastel colorscheme designed for comfortable long coding sessions",
     "author": "samonide",
-    "version": "4.1.0",
+    "version": "5.0.0",
     "variants": [
         {
             "name": "Dusk",
@@ -46,6 +46,13 @@
             "type": "dark",
             "description": "Serene deep blue ocean depths",
             "file": "colors-ocean.json"
+        },
+        {
+            "name": "Aurora",
+            "variant": "aurora",
+            "type": "dark",
+            "description": "Northern lights - vibrant greens, pinks, and purples",
+            "file": "colors-aurora.json"
         }
     ],
     "colors": {

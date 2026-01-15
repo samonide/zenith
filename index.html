@@ -773,9 +773,9 @@
                 Twilight
                 <span class="variant-desc">Serene Deep Night</span>
             </button>
-            <button class="variant-btn" data-variant="midnight">
-                Midnight
-                <span class="variant-desc">Cosmic Blues</span>
+            <button class="variant-btn" data-variant="aurora">
+                Aurora
+                <span class="variant-desc">Northern Lights</span>
             </button>
             <button class="variant-btn" data-variant="forest">
                 Forest
@@ -810,9 +810,9 @@
                 <span>Twilight</span>
                 <span class="variant-desc">Serene Deep Night</span>
             </button>
-            <button class="mobile-variant-btn" data-variant="midnight" data-mobile="true">
-                <span>Midnight</span>
-                <span class="variant-desc">Cosmic Blues</span>
+            <button class="mobile-variant-btn" data-variant="aurora" data-mobile="true">
+                <span>Aurora</span>
+                <span class="variant-desc">Northern Lights</span>
             </button>
             <button class="mobile-variant-btn" data-variant="forest" data-mobile="true">
                 <span>Forest</span>
@@ -870,63 +870,63 @@
                 <div class="color-box">
                     <div class="color-swatch" data-color="lavender" style="background-color: #bba6f7;"></div>
                     <div class="color-info">
-                        <div class="color-name">Lavender (Keywords)</div>
+                        <div class="color-name">Lavender</div>
                         <div class="color-hex" data-color-hex="lavender">#bba6f7</div>
                     </div>
                 </div>
                 <div class="color-box">
                     <div class="color-swatch" data-color="sky" style="background-color: #91d7e3;"></div>
                     <div class="color-info">
-                        <div class="color-name">Sky (Types)</div>
+                        <div class="color-name">Sky</div>
                         <div class="color-hex" data-color-hex="sky">#91d7e3</div>
                     </div>
                 </div>
                 <div class="color-box">
                     <div class="color-swatch" data-color="green" style="background-color: #a6e3a1;"></div>
                     <div class="color-info">
-                        <div class="color-name">Green (Strings)</div>
+                        <div class="color-name">Green</div>
                         <div class="color-hex" data-color-hex="green">#a6e3a1</div>
                     </div>
                 </div>
                 <div class="color-box">
                     <div class="color-swatch" data-color="purple" style="background-color: #d5b8f5;"></div>
                     <div class="color-info">
-                        <div class="color-name">Purple (Variables)</div>
+                        <div class="color-name">Purple</div>
                         <div class="color-hex" data-color-hex="purple">#d5b8f5</div>
                     </div>
                 </div>
                 <div class="color-box">
                     <div class="color-swatch" data-color="peach" style="background-color: #fab387;"></div>
                     <div class="color-info">
-                        <div class="color-name">Peach (Constants)</div>
+                        <div class="color-name">Peach</div>
                         <div class="color-hex" data-color-hex="peach">#fab387</div>
                     </div>
                 </div>
                 <div class="color-box">
                     <div class="color-swatch" data-color="blue" style="background-color: #89b4fa;"></div>
                     <div class="color-info">
-                        <div class="color-name">Blue (Functions)</div>
+                        <div class="color-name">Blue</div>
                         <div class="color-hex" data-color-hex="blue">#89b4fa</div>
                     </div>
                 </div>
                 <div class="color-box">
                     <div class="color-swatch" data-color="yellow" style="background-color: #f5e5b8;"></div>
                     <div class="color-info">
-                        <div class="color-name">Yellow (Warnings)</div>
+                        <div class="color-name">Yellow</div>
                         <div class="color-hex" data-color-hex="yellow">#f5e5b8</div>
                     </div>
                 </div>
                 <div class="color-box">
                     <div class="color-swatch" data-color="red" style="background-color: #f5b5c8;"></div>
                     <div class="color-info">
-                        <div class="color-name">Rose (Errors)</div>
+                        <div class="color-name">Rose</div>
                         <div class="color-hex" data-color-hex="red">#f5b5c8</div>
                     </div>
                 </div>
                 <div class="color-box">
                     <div class="color-swatch" data-color="cyan" style="background-color: #7dd4ed;"></div>
                     <div class="color-info">
-                        <div class="color-name">Cyan (Operators)</div>
+                        <div class="color-name">Cyan</div>
                         <div class="color-hex" data-color-hex="cyan">#7dd4ed</div>
                     </div>
                 </div>
@@ -1104,16 +1104,25 @@
                 el.style.borderColor = colors.ui.border;
             });
 
-            // Update syntax highlighting
-            document.querySelectorAll('.keyword').forEach(el => el.style.color = colors.syntax.lavender);
-            document.querySelectorAll('.type').forEach(el => el.style.color = colors.syntax.sky);
-            document.querySelectorAll('.string').forEach(el => el.style.color = colors.syntax.green);
-            document.querySelectorAll('.variable').forEach(el => el.style.color = colors.syntax.purple);
-            document.querySelectorAll('.constant').forEach(el => el.style.color = colors.syntax.peach);
-            document.querySelectorAll('.function').forEach(el => el.style.color = colors.syntax.blue);
-            document.querySelectorAll('.comment').forEach(el => el.style.color = colors.ui.comment);
-            document.querySelectorAll('.operator').forEach(el => el.style.color = colors.syntax.cyan);
-            document.querySelectorAll('.number').forEach(el => el.style.color = colors.syntax.peach);
+            // Update syntax highlighting using the mapping
+            const mapping = colorData.mapping;
+            const getColor = (colorName) => {
+                if (colorName === 'comment') return colors.ui.comment;
+                if (colorName === 'fg') return colors.base.fg;
+                if (colorName === 'fgAlt') return colors.base.fgAlt;
+                if (colorName === 'fgDark') return colors.base.fgDark;
+                return colors.syntax[colorName] || colors.base.fg;
+            };
+
+            document.querySelectorAll('.keyword').forEach(el => el.style.color = getColor(mapping.keywords));
+            document.querySelectorAll('.type').forEach(el => el.style.color = getColor(mapping.types));
+            document.querySelectorAll('.string').forEach(el => el.style.color = getColor(mapping.strings));
+            document.querySelectorAll('.variable').forEach(el => el.style.color = getColor(mapping.variables));
+            document.querySelectorAll('.constant').forEach(el => el.style.color = getColor(mapping.constants));
+            document.querySelectorAll('.function').forEach(el => el.style.color = getColor(mapping.functions));
+            document.querySelectorAll('.comment').forEach(el => el.style.color = getColor(mapping.comments));
+            document.querySelectorAll('.operator').forEach(el => el.style.color = getColor(mapping.operators));
+            document.querySelectorAll('.number').forEach(el => el.style.color = getColor(mapping.numbers));
             document.querySelectorAll('.fg').forEach(el => el.style.color = colors.base.fg);
             document.querySelectorAll('.line-number').forEach(el => el.style.color = colors.base.fgDark);
 

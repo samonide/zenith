@@ -4,14 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenith - A Soothing Pastel Colorscheme</title>
-    <meta name="description"
-        content="Zenith is a soothing, aesthetically pleasing dark colorscheme with soft pastels designed for comfortable long coding sessions">
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23bba6f7;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%2389b4fa;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2391d7e3;stop-opacity:1' /%3E%3C/linearGradient%3E%3ClinearGradient id='grad2' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%23d5b8f5;stop-opacity:0.7' /%3E%3Cstop offset='100%25' style='stop-color:%23a6e3a1;stop-opacity:0.5' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 100 40 L 160 140 L 40 140 Z' fill='url(%23grad1)' /%3E%3Cpath d='M 140 80 L 180 140 L 100 140 Z' fill='url(%23grad2)' opacity='0.8'/%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%23bba6f7' stroke-width='2' opacity='0.2'/%3E%3C/svg%3E">
+    <title>Zenith — Premium Colorscheme Collection</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        @import url('https://api.fontsource.org/v1/fonts/monaspace-neon/css?weights=400,500&display=swap');
+        :root {
+            --bg: #0a0a0f;
+            --bg-elevated: #12121a;
+            --text: #e8e8f0;
+            --text-dim: #a0a0b0;
+            --accent: #bba6f7;
+            --blue: #89b4fa;
+            --green: #a6e3a1;
+            --red: #f38ba8;
+            --yellow: #f9e2af;
+            --teal: #94e2d5;
+            --orange: #fab387;
+            --pink: #f5c2e7;
+        }
 
         * {
             margin: 0;
@@ -20,382 +34,324 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: #1e1e2e;
-            color: #e0dfe8;
-            line-height: 1.6;
-            transition: background-color 0.5s ease, color 0.5s ease;
-        }
-
-        code,
-        pre {
-            font-family: 'Monaspace Neon', 'Maple Mono', 'JetBrains Mono', 'Courier New', monospace;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
         }
 
         /* Hero Section */
         .hero {
-            text-align: center;
-            padding: 80px 20px 60px;
-            margin-bottom: 40px;
-        }
-
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 30px;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 60px 20px;
+            position: relative;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(187, 166, 247, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(137, 180, 250, 0.06) 0%, transparent 50%);
         }
 
-        .logo svg {
-            width: 100%;
-            height: 100%;
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(187, 166, 247, 0.1);
+            border: 1px solid rgba(187, 166, 247, 0.3);
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: var(--accent);
+            margin-bottom: 32px;
+            text-transform: uppercase;
         }
 
-        h1 {
-            color: #bba6f7;
-            font-size: 4em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            letter-spacing: -0.02em;
-            transition: color 0.5s ease;
+        .hero h1 {
+            font-size: clamp(64px, 12vw, 140px);
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent) 40%, var(--blue) 70%, var(--teal) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 24px;
+            line-height: 0.95;
         }
 
-        .tagline {
-            font-size: 1.5em;
-            color: #b8b5c9;
-            margin-bottom: 40px;
-            font-weight: 400;
-            transition: color 0.5s ease;
+        .hero-subtitle {
+            font-size: clamp(20px, 3vw, 32px);
+            color: var(--text-dim);
+            font-weight: 300;
+            max-width: 700px;
+            text-align: center;
+            line-height: 1.5;
+            margin-bottom: 48px;
         }
 
-        .cta-buttons {
+        .hero-cta {
             display: flex;
             gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
+            margin-bottom: 80px;
         }
 
         .btn {
-            padding: 14px 32px;
-            border-radius: 8px;
-            text-decoration: none;
+            padding: 16px 40px;
+            font-size: 16px;
             font-weight: 600;
-            font-size: 1.1em;
-            transition: all 0.3s ease;
-            display: inline-block;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #bba6f7 0%, #89b4fa 100%);
-            color: #1e1e2e;
+            background: linear-gradient(135deg, var(--accent), var(--blue));
+            color: #000;
+            box-shadow: 0 10px 40px rgba(187, 166, 247, 0.3);
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(187, 166, 247, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(187, 166, 247, 0.5);
         }
 
         .btn-secondary {
-            background-color: #252535;
-            color: #e0dfe8;
-            border: 1px solid #3e3e52;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
         }
 
         .btn-secondary:hover {
-            background-color: #2a2a3c;
-            border-color: #bba6f7;
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
-        /* Features Section */
-        .features {
+        /* Theme Gallery */
+        .theme-gallery {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 80px 40px 100px;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .gallery-title {
+            font-size: clamp(40px, 6vw, 72px);
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+        }
+
+        .gallery-desc {
+            font-size: 20px;
+            color: var(--text-dim);
+            font-weight: 300;
+        }
+
+        .theme-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-bottom: 80px;
         }
 
-        .feature-card {
-            background-color: #1e1e2e;
-            border: 1px solid #3e3e52;
-            border-radius: 12px;
-            padding: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .feature-card:hover {
-            border-color: #bba6f7;
-            transform: translateY(-4px);
-        }
-
-        .feature-icon {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-
-        .feature-title {
-            color: #d5b8f5;
-            font-size: 1.3em;
-            font-weight: 600;
-            margin-bottom: 10px;
-            transition: color 0.5s ease;
-        }
-
-        .feature-desc {
-            color: #b8b5c9;
-            line-height: 1.8;
-            transition: color 0.5s ease;
-        }
-
-        /* Section Styling */
-        .section {
-            background-color: #1e1e2e;
-            border: 1px solid #3e3e52;
-            border-radius: 12px;
-            padding: 40px;
-            margin-bottom: 40px;
-            transition: background-color 0.5s ease, border-color 0.5s ease;
-        }
-
-        .section-title {
-            color: #d5b8f5;
-            margin-bottom: 25px;
-            font-size: 2em;
-            font-weight: 600;
-            border-bottom: 2px solid #3e3e52;
-            padding-bottom: 15px;
-            transition: color 0.5s ease, border-color 0.5s ease;
-        }
-
-        .section-subtitle {
-            color: #b8b5c9;
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            transition: color 0.5s ease;
-        }
-
-        .color-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .color-box {
-            border: 1px solid #3e3e52;
-            border-radius: 6px;
+        .theme-card {
+            background: var(--bg-elevated);
+            border-radius: 20px;
             overflow: hidden;
-            transition: border-color 0.5s ease;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
         }
 
-        .color-swatch {
-            height: 80px;
-            width: 100%;
-            border: 1px solid #3e3e52;
+        .theme-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
         }
 
-        .color-info {
-            padding: 10px;
-            background-color: #252535;
-            transition: background-color 0.5s ease;
+        .theme-card.active {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(187, 166, 247, 0.2);
         }
 
-        .color-name {
-            font-weight: bold;
-            color: #e0dfe8;
-            margin-bottom: 5px;
-            transition: color 0.5s ease;
+        .theme-preview {
+            height: 200px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            position: relative;
         }
 
-        .color-hex {
-            color: #b8b5c9;
-            font-size: 0.9em;
-            transition: color 0.5s ease;
+        .theme-info {
+            padding: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .code-preview {
-            background-color: #1e1e2e;
-            border: 1px solid #3e3e52;
-            border-radius: 8px;
-            padding: 25px;
-            overflow-x: auto;
+        .theme-name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .theme-desc {
+            font-size: 14px;
+            color: var(--text-dim);
+            margin-bottom: 16px;
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .color-dot {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .color-dot:hover {
+            transform: scale(1.2);
+        }
+
+        /* Code Showcase */
+        .code-showcase {
+            max-width: 1400px;
+            margin: 0 auto 100px;
+            padding: 0 40px;
+        }
+
+        .showcase-title {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 48px;
+            letter-spacing: -0.03em;
+        }
+
+        .code-window {
+            background: var(--bg-elevated);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .code-header {
+            padding: 16px 24px;
+            background: rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .code-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .dot-1 {
+            background: var(--red);
+        }
+
+        .dot-2 {
+            background: var(--yellow);
+        }
+
+        .dot-3 {
+            background: var(--green);
+        }
+
+        .code-title {
+            margin-left: auto;
+            font-size: 13px;
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+
+        .code-content {
+            padding: 40px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
             line-height: 1.8;
-            font-family: 'Monaspace Neon', 'Maple Mono', 'JetBrains Mono', monospace;
-            transition: background-color 0.5s ease, border-color 0.5s ease;
+            overflow-x: auto;
         }
 
         .code-line {
             display: block;
-            padding: 2px 0;
         }
 
-        .line-number {
-            color: #8e8a9e;
-            margin-right: 20px;
-            user-select: none;
+        .ln {
             display: inline-block;
-            width: 30px;
+            width: 45px;
+            color: var(--text-dim);
+            opacity: 0.4;
+            user-select: none;
             text-align: right;
-            transition: color 0.5s ease;
+            margin-right: 32px;
         }
 
-        .keyword {
-            color: #bba6f7;
+        .kw {
+            color: var(--accent);
             font-weight: 600;
-            transition: color 0.5s ease;
         }
 
-        .type {
-            color: #91d7e3;
+        .tp {
+            color: var(--teal);
             font-style: italic;
-            transition: color 0.5s ease;
         }
 
-        .string {
-            color: #a6e3a1;
-            transition: color 0.5s ease;
+        .str {
+            color: var(--green);
         }
 
-        .variable {
-            color: #d5b8f5;
-            transition: color 0.5s ease;
+        .var {
+            color: var(--pink);
         }
 
-        .constant {
-            color: #fab387;
+        .const {
+            color: var(--orange);
             font-weight: 600;
-            transition: color 0.5s ease;
         }
 
-        .function {
-            color: #89b4fa;
+        .fn {
+            color: var(--blue);
             font-weight: 600;
-            transition: color 0.5s ease;
         }
 
-        .comment {
-            color: #8888a8;
+        .cmt {
+            color: rgba(255, 255, 255, 0.3);
             font-style: italic;
-            transition: color 0.5s ease;
         }
 
-        .operator {
-            color: #7dd4ed;
-            transition: color 0.5s ease;
+        .op {
+            color: var(--accent);
         }
 
-        .number {
-            color: #fab387;
-            transition: color 0.5s ease;
-        }
-
-        .fg {
-            color: #e0dfe8;
-            transition: color 0.5s ease;
-        }
-
-        .ui-examples {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .ui-box {
-            background-color: #252535;
-            border: 1px solid #3e3e52;
-            border-radius: 6px;
-            padding: 15px;
-            transition: background-color 0.5s ease, border-color 0.5s ease;
-        }
-
-        .ui-title {
-            color: #a8b5f5;
-            margin-bottom: 10px;
-            font-weight: bold;
-            transition: color 0.5s ease;
-        }
-
-        .selection {
-            background-color: #3a3a52;
-            padding: 4px;
-            border-radius: 3px;
-        }
-
-        .cursor-line {
-            background-color: #28283a;
-            padding: 4px;
-            border-radius: 3px;
-        }
-
-        .diagnostic-error {
-            color: #f5b5c8;
-            transition: color 0.5s ease;
-        }
-
-        .diagnostic-warning {
-            color: #f5e5b8;
-            transition: color 0.5s ease;
-        }
-
-        .diagnostic-info {
-            color: #a8b5f5;
-            transition: color 0.5s ease;
-        }
-
-        .diagnostic-hint {
-            color: #7dd4ed;
-            transition: color 0.5s ease;
-        }
-
-        .git-add {
-            color: #b5e5c5;
-            transition: color 0.5s ease;
-        }
-
-        .git-change {
-            color: #f5e5b8;
-            transition: color 0.5s ease;
-        }
-
-        .git-delete {
-            color: #f5b5c8;
-            transition: color 0.5s ease;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 60px 20px 40px;
-            color: #8e8a9e;
-            transition: color 0.5s ease;
-        }
-
-        footer a {
-            color: #bba6f7;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Variant Selector */
-        .variant-selector {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            flex-wrap: nowrap;
-            margin: 40px auto;
-            max-width: 100%;
-            padding: 10px 20px;
-            overflow-x: auto;
+        .num {
+            color: var(--orange);
         }
 
         /* Mobile Floating Theme Button */
@@ -405,15 +361,17 @@
             bottom: 24px;
             right: 24px;
             z-index: 1000;
-            width: 56px;
-            height: 56px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #bba6f7 0%, #89b4fa 100%);
+            background: linear-gradient(135deg, var(--accent), var(--blue));
             border: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(187, 166, 247, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 3px 10px rgba(187, 166, 247, 0.5);
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            font-size: 24px;
+            font-size: 28px;
+            align-items: center;
+            justify-content: center;
         }
 
         .mobile-theme-toggle:active {
@@ -421,23 +379,23 @@
         }
 
         .mobile-theme-toggle.active {
-            background: linear-gradient(135deg, #89b4fa 0%, #91d7e3 100%);
+            background: linear-gradient(135deg, var(--blue), var(--teal));
         }
 
         .mobile-theme-dropdown {
             display: none;
             position: fixed;
-            bottom: 90px;
+            bottom: 95px;
             right: 24px;
             z-index: 999;
-            background: #252535;
-            border: 2px solid #3e3e52;
-            border-radius: 16px;
-            padding: 12px;
-            min-width: 200px;
-            max-height: 70vh;
+            background: var(--bg-elevated);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 16px;
+            min-width: 240px;
+            max-height: 65vh;
             overflow-y: auto;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
             opacity: 0;
             transform: translateY(20px) scale(0.9);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -458,26 +416,26 @@
         }
 
         .mobile-theme-dropdown::-webkit-scrollbar-thumb {
-            background-color: #3e3e52;
+            background-color: rgba(255, 255, 255, 0.2);
             border-radius: 3px;
         }
 
         .mobile-variant-btn {
             width: 100%;
-            padding: 14px 16px;
-            margin-bottom: 8px;
-            border: 2px solid #3e3e52;
-            border-radius: 10px;
-            background: #1e1e2e;
-            color: #b8b5c9;
+            padding: 16px 18px;
+            margin-bottom: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            background: var(--bg);
+            color: var(--text-dim);
             font-weight: 600;
-            font-size: 0.95em;
+            font-size: 15px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-align: left;
             display: flex;
-            flex-direction: column;
-            gap: 4px;
+            align-items: center;
+            gap: 12px;
         }
 
         .mobile-variant-btn:last-child {
@@ -489,768 +447,476 @@
         }
 
         .mobile-variant-btn.active {
-            background: linear-gradient(135deg, #bba6f7 0%, #89b4fa 100%);
-            color: #1e1e2e;
-            border-color: #bba6f7;
-            box-shadow: 0 2px 8px rgba(187, 166, 247, 0.3);
+            background: linear-gradient(135deg, var(--accent), var(--blue));
+            color: #000;
+            border-color: var(--accent);
+            box-shadow: 0 4px 12px rgba(187, 166, 247, 0.4);
+        }
+
+        .mobile-variant-btn .variant-icon {
+            font-size: 24px;
+        }
+
+        .mobile-variant-btn .variant-info {
+            flex: 1;
+        }
+
+        .mobile-variant-btn .variant-name {
+            display: block;
+            font-weight: 700;
         }
 
         .mobile-variant-btn .variant-desc {
-            font-size: 0.8em;
-            opacity: 0.8;
-        }
-
-        .variant-btn {
-            padding: 12px 24px;
-            border: 2px solid #3e3e52;
-            border-radius: 8px;
-            background: #252535;
-            color: #b8b5c9;
-            font-weight: 600;
-            font-size: 0.95em;
-            cursor: pointer;
-            transition: all 0.5s ease;
-            text-align: center;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        .variant-btn:hover {
-            border-color: #bba6f7;
-            transform: translateY(-2px);
-        }
-
-        .variant-btn.active {
-            background: #bba6f7;
-            color: #1e1e2e;
-            border-color: #bba6f7;
-            transition: all 0.5s ease;
-        }
-
-        .variant-desc {
             display: block;
-            font-size: 0.75em;
-            font-weight: 400;
-            opacity: 0.8;
-            margin-top: 3px;
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 2px;
         }
 
-        /* Responsive Mobile & Tablet Styles */
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 80px 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 32px;
+            justify-content: center;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-note {
+            color: var(--text-dim);
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        /* Mobile Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-
             .hero {
-                padding: 50px 15px 40px;
+                min-height: 80vh;
+                padding: 40px 20px;
             }
 
-            .logo {
-                width: 80px;
-                height: 80px;
+            .hero-badge {
+                font-size: 11px;
+                padding: 6px 16px;
             }
 
-            h1 {
-                font-size: 2.5em;
+            .hero h1 {
+                font-size: 48px;
             }
 
-            .tagline {
-                font-size: 1.2em;
+            .hero-subtitle {
+                font-size: 18px;
+                margin-bottom: 32px;
             }
 
-            .cta-buttons {
+            .hero-cta {
                 flex-direction: column;
+                width: 100%;
+                max-width: 300px;
                 gap: 12px;
+                margin-bottom: 40px;
             }
 
             .btn {
                 width: 100%;
-                max-width: 300px;
-                padding: 12px 24px;
-                font-size: 1em;
+                justify-content: center;
+                padding: 14px 32px;
             }
 
-            .features {
+            .theme-gallery {
+                padding: 0 20px 60px;
+            }
+
+            .gallery-header {
+                margin-bottom: 40px;
+            }
+
+            .gallery-title {
+                font-size: 36px;
+            }
+
+            .gallery-desc {
+                font-size: 16px;
+            }
+
+            .theme-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
-            }
-
-            .feature-card {
-                padding: 20px;
-            }
-
-            .section {
-                padding: 25px 20px;
-            }
-
-            .section-title {
-                font-size: 1.6em;
-            }
-
-            .color-grid {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                gap: 12px;
-            }
-
-            .ui-examples {
-                grid-template-columns: 1fr;
-            }
-
-            .code-preview {
-                padding: 15px;
-                font-size: 0.9em;
-            }
-
-            .line-number {
-                margin-right: 10px;
-                width: 20px;
-            }
-
-            /* Hide desktop variant selector on mobile */
-            .variant-selector {
                 display: none;
             }
 
-            /* Show mobile floating theme button */
+            .code-showcase {
+                padding: 0 20px;
+                margin-bottom: 80px;
+            }
+
+            .showcase-title {
+                font-size: 32px;
+                margin-bottom: 32px;
+            }
+
+            .code-content {
+                padding: 24px 16px;
+                font-size: 13px;
+            }
+
+            .ln {
+                width: 30px;
+                margin-right: 16px;
+            }
+
             .mobile-theme-toggle {
                 display: flex;
-                align-items: center;
-                justify-content: center;
             }
 
             footer {
-                padding: 40px 20px 30px;
-                font-size: 0.9em;
+                padding: 60px 20px;
+            }
+
+            .footer-links {
+                gap: 24px;
+                font-size: 14px;
             }
         }
 
-        /* Extra small mobile devices */
         @media (max-width: 480px) {
-            h1 {
-                font-size: 2em;
+            .hero h1 {
+                font-size: 40px;
             }
 
-            .tagline {
-                font-size: 1em;
+            .mobile-theme-dropdown {
+                right: 12px;
+                bottom: 85px;
+                min-width: calc(100vw - 24px);
+                left: 12px;
             }
 
-            .feature-icon {
-                font-size: 2em;
+            .mobile-theme-toggle {
+                right: 12px;
+                bottom: 12px;
+                width: 56px;
+                height: 56px;
+                font-size: 24px;
             }
 
-            .feature-title {
-                font-size: 1.1em;
-            }
-
-            .color-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .color-swatch {
-                height: 60px;
-            }
-
-            .section-title {
-                font-size: 1.4em;
-            }
-
-            .code-preview {
-                font-size: 0.85em;
-            }
-
-            .variant-btn {
-                min-width: 110px;
-                padding: 8px 16px;
-            }
-        }
-
-        /* Tablet landscape */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .container {
-                padding: 20px 30px;
-            }
-
-            h1 {
-                font-size: 3.5em;
-            }
-
-            .features {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .color-grid {
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            }
-        }
-
-        /* Smooth animations for mobile */
-        @media (prefers-reduced-motion: no-preference) {
-            @media (max-width: 768px) {
-                .variant-btn {
-                    transition: all 0.3s ease;
-                }
-
-                .feature-card:hover {
-                    transform: translateY(-2px);
-                }
-
-                .variant-btn:active {
-                    transform: scale(0.95);
-                }
+            .code-content {
+                padding: 20px 12px;
+                font-size: 12px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Hero Section -->
-        <div class="hero">
-            <div class="logo">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Mountain peak with gradient -->
-                    <defs>
-                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#bba6f7;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#89b4fa;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#91d7e3;stop-opacity:1" />
-                        </linearGradient>
-                        <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#d5b8f5;stop-opacity:0.7" />
-                            <stop offset="100%" style="stop-color:#a6e3a1;stop-opacity:0.5" />
-                        </linearGradient>
-                    </defs>
-                    <!-- Main mountain -->
-                    <path d="M 100 40 L 160 140 L 40 140 Z" fill="url(#grad1)" />
-                    <!-- Side mountain -->
-                    <path d="M 140 80 L 180 140 L 100 140 Z" fill="url(#grad2)" opacity="0.8" />
-                    <!-- Base highlight -->
-                    <circle cx="100" cy="100" r="80" fill="none" stroke="#bba6f7" stroke-width="2" opacity="0.2" />
-                </svg>
-            </div>
-            <h1>Zenith</h1>
-            <p class="tagline">A soothing pastel colorscheme for the mindful coder</p>
-            <div class="cta-buttons">
-                <a href="#palette" class="btn btn-primary">Explore Colors</a>
-                <a href="https://github.com/samonide/zenith" class="btn btn-secondary">View on GitHub</a>
-            </div>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-badge">✨ Version 6.0.0 • Base46 Architecture</div>
+        <h1>Zenith</h1>
+        <p class="hero-subtitle">
+            Soft pastels designed for comfortable long coding sessions.
+        </p>
+        <div class="hero-cta">
+            <a href="https://github.com/samonide/zenith" class="btn btn-primary">
+                <span>⭐</span> View on GitHub
+            </a>
+            <a href="#themes" class="btn btn-secondary">
+                <span>🎨</span> Explore Themes
+            </a>
+        </div>
+    </section>
+
+    <!-- Theme Gallery (Desktop) -->
+    <section class="theme-gallery" id="themes">
+        <div class="gallery-header">
+            <h2 class="gallery-title">Eight Unique Themes</h2>
+            <p class="gallery-desc">Click any theme to preview it live</p>
         </div>
 
+        <div class="theme-grid">
+            <!-- Theme cards will be generated by JavaScript -->
+        </div>
+    </section>
 
-        <!-- Features -->
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">🎨</div>
-                <h3 class="feature-title">Soft Pastels</h3>
-                <p class="feature-desc">Carefully crafted pastel colors that are easy on the eyes without compromising
-                    contrast and readability.</p>
+    <!-- Code Showcase -->
+    <section class="code-showcase">
+        <h2 class="showcase-title">See It In Action</h2>
+        <div class="code-window">
+            <div class="code-header">
+                <div class="code-dot dot-1"></div>
+                <div class="code-dot dot-2"></div>
+                <div class="code-dot dot-3"></div>
+                <span class="code-title">components/UserCard.tsx</span>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">✨</div>
-                <h3 class="feature-title">Soothing Aesthetic</h3>
-                <p class="feature-desc">Designed for comfortable long coding sessions with a deep purple-gray background
-                    that's gentle and elegant.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🚀</div>
-                <h3 class="feature-title">Universal Support</h3>
-                <p class="feature-desc">Available for VS Code, Neovim, and more editors. One colorscheme, everywhere you
-                    code.</p>
+            <div class="code-content">
+                <span class="code-line"><span class="ln">1</span><span class="kw">import</span> <span
+                        class="tp">React</span>, { useState, useEffect } <span class="kw">from</span> <span
+                        class="str">'react'</span></span>
+                <span class="code-line"><span class="ln">2</span></span>
+                <span class="code-line"><span class="ln">3</span><span class="kw">interface</span> <span
+                        class="tp">User</span> {</span>
+                <span class="code-line"><span class="ln">4</span> <span class="var">id</span>: <span
+                        class="tp">string</span></span>
+                <span class="code-line"><span class="ln">5</span> <span class="var">name</span>: <span
+                        class="tp">string</span></span>
+                <span class="code-line"><span class="ln">6</span> <span class="var">email</span>: <span
+                        class="tp">string</span></span>
+                <span class="code-line"><span class="ln">7</span> <span class="var">role</span>: <span
+                        class="str">'admin'</span> <span class="op">|</span> <span class="str">'user'</span></span>
+                <span class="code-line"><span class="ln">8</span>}</span>
+                <span class="code-line"><span class="ln">9</span></span>
+                <span class="code-line"><span class="ln">10</span><span class="kw">const</span> <span
+                        class="const">MAX_RETRIES</span> <span class="op">=</span> <span class="num">3</span></span>
+                <span class="code-line"><span class="ln">11</span><span class="kw">const</span> <span
+                        class="const">API_URL</span> <span class="op">=</span> <span
+                        class="str">'https://api.example.com'</span></span>
+                <span class="code-line"><span class="ln">12</span></span>
+                <span class="code-line"><span class="ln">13</span><span class="cmt">// Main component for displaying
+                        user information</span></span>
+                <span class="code-line"><span class="ln">14</span><span class="kw">export function</span> <span
+                        class="fn">UserCard</span>({ <span class="var">userId</span> }: { <span
+                        class="var">userId</span>: <span class="tp">string</span> }) {</span>
+                <span class="code-line"><span class="ln">15</span> <span class="kw">const</span> [<span
+                        class="var">user</span>, <span class="var">setUser</span>] <span class="op">=</span> <span
+                        class="fn">useState</span>&lt;<span class="tp">User</span> <span class="op">|</span> <span
+                        class="tp">null</span>&gt;(<span class="kw">null</span>)</span>
+                <span class="code-line"><span class="ln">16</span> <span class="kw">const</span> [<span
+                        class="var">loading</span>, <span class="var">setLoading</span>] <span class="op">=</span> <span
+                        class="fn">useState</span>(<span class="kw">true</span>)</span>
+                <span class="code-line"><span class="ln">17</span></span>
+                <span class="code-line"><span class="ln">18</span> <span class="kw">useEffect</span>(() <span
+                        class="op">=&gt;</span> {</span>
+                <span class="code-line"><span class="ln">19</span> <span class="kw">async function</span> <span
+                        class="fn">fetchUser</span>() {</span>
+                <span class="code-line"><span class="ln">20</span> <span class="kw">try</span> {</span>
+                <span class="code-line"><span class="ln">21</span> <span class="kw">const</span> <span
+                        class="var">response</span> <span class="op">=</span> <span class="kw">await</span> <span
+                        class="fn">fetch</span>(<span class="str">`</span>${<span class="const">API_URL</span>}<span
+                        class="str">/users/</span>${<span class="var">userId</span>}<span class="str">`</span>)</span>
+                <span class="code-line"><span class="ln">22</span> <span class="kw">const</span> <span
+                        class="var">data</span> <span class="op">=</span> <span class="kw">await</span> <span
+                        class="var">response</span>.<span class="fn">json</span>()</span>
+                <span class="code-line"><span class="ln">23</span> <span class="fn">setUser</span>(<span
+                        class="var">data</span>)</span>
+                <span class="code-line"><span class="ln">24</span> } <span class="kw">catch</span> (<span
+                        class="var">error</span>) {</span>
+                <span class="code-line"><span class="ln">25</span> console.<span class="fn">error</span>(<span
+                        class="str">'Failed to fetch user:'</span>, <span class="var">error</span>)</span>
+                <span class="code-line"><span class="ln">26</span> } <span class="kw">finally</span> {</span>
+                <span class="code-line"><span class="ln">27</span> <span class="fn">setLoading</span>(<span
+                        class="kw">false</span>)</span>
+                <span class="code-line"><span class="ln">28</span> }</span>
+                <span class="code-line"><span class="ln">29</span> }</span>
+                <span class="code-line"><span class="ln">30</span> <span class="fn">fetchUser</span>()</span>
+                <span class="code-line"><span class="ln">31</span> }, [<span class="var">userId</span>])</span>
+                <span class="code-line"><span class="ln">32</span></span>
+                <span class="code-line"><span class="ln">33</span> <span class="kw">if</span> (<span
+                        class="var">loading</span>) <span class="kw">return</span> &lt;<span
+                        class="tp">div</span>&gt;Loading...&lt;/<span class="tp">div</span>&gt;</span>
+                <span class="code-line"><span class="ln">34</span> <span class="kw">if</span> (<span
+                        class="op">!</span><span class="var">user</span>) <span class="kw">return</span> &lt;<span
+                        class="tp">div</span>&gt;User not found&lt;/<span class="tp">div</span>&gt;</span>
+                <span class="code-line"><span class="ln">35</span></span>
+                <span class="code-line"><span class="ln">36</span> <span class="kw">return</span> (</span>
+                <span class="code-line"><span class="ln">37</span> &lt;<span class="tp">div</span> <span
+                        class="var">className</span>=<span class="str">"user-card"</span>&gt;</span>
+                <span class="code-line"><span class="ln">38</span> &lt;<span class="tp">h2</span>&gt;{<span
+                        class="var">user</span>.<span class="var">name</span>}&lt;/<span class="tp">h2</span>&gt;</span>
+                <span class="code-line"><span class="ln">39</span> &lt;<span class="tp">p</span>&gt;{<span
+                        class="var">user</span>.<span class="var">email</span>}&lt;/<span class="tp">p</span>&gt;</span>
+                <span class="code-line"><span class="ln">40</span> &lt;<span class="tp">span</span> <span
+                        class="var">className</span>=<span class="str">"role"</span>&gt;{<span
+                        class="var">user</span>.<span class="var">role</span>}&lt;/<span
+                        class="tp">span</span>&gt;</span>
+                <span class="code-line"><span class="ln">41</span> &lt;/<span class="tp">div</span>&gt;</span>
+                <span class="code-line"><span class="ln">42</span> )</span>
+                <span class="code-line"><span class="ln">43</span>}</span>
             </div>
         </div>
+    </section>
 
-        <!-- Variant Selector (Desktop) -->
-        <div class="variant-selector">
-            <button class="variant-btn active" data-variant="dusk">
-                Dusk
-                <span class="variant-desc">Original Dark</span>
-            </button>
-            <button class="variant-btn" data-variant="dawn">
-                Dawn
-                <span class="variant-desc">Light Theme</span>
-            </button>
-            <button class="variant-btn" data-variant="twilight">
-                Twilight
-                <span class="variant-desc">Serene Deep Night</span>
-            </button>
-            <button class="variant-btn" data-variant="aurora">
-                Aurora
-                <span class="variant-desc">Northern Lights</span>
-            </button>
-            <button class="variant-btn" data-variant="forest">
-                Forest
-                <span class="variant-desc">Earthy Dark</span>
-            </button>
-            <button class="variant-btn" data-variant="monochrome">
-                Monochrome
-                <span class="variant-desc">Ultra-Low Contrast</span>
-            </button>
-            <button class="variant-btn" data-variant="ocean">
-                Ocean
-                <span class="variant-desc">Deep Blue</span>
-            </button>
-        </div>
-
-        <!-- Mobile Theme Toggle Button -->
-        <button class="mobile-theme-toggle" id="mobileThemeToggle" aria-label="Toggle theme selector">
-            🎨
-        </button>
-
-        <!-- Mobile Theme Dropdown -->
-        <div class="mobile-theme-dropdown" id="mobileThemeDropdown">
-            <button class="mobile-variant-btn active" data-variant="dusk" data-mobile="true">
-                <span>Dusk</span>
-                <span class="variant-desc">Original Dark</span>
-            </button>
-            <button class="mobile-variant-btn" data-variant="dawn" data-mobile="true">
-                <span>Dawn</span>
-                <span class="variant-desc">Light Theme</span>
-            </button>
-            <button class="mobile-variant-btn" data-variant="twilight" data-mobile="true">
-                <span>Twilight</span>
-                <span class="variant-desc">Serene Deep Night</span>
-            </button>
-            <button class="mobile-variant-btn" data-variant="aurora" data-mobile="true">
-                <span>Aurora</span>
-                <span class="variant-desc">Northern Lights</span>
-            </button>
-            <button class="mobile-variant-btn" data-variant="forest" data-mobile="true">
-                <span>Forest</span>
-                <span class="variant-desc">Earthy Dark</span>
-            </button>
-            <button class="mobile-variant-btn" data-variant="monochrome" data-mobile="true">
-                <span>Monochrome</span>
-                <span class="variant-desc">Ultra-Low Contrast</span>
-            </button>
-            <button class="mobile-variant-btn" data-variant="ocean" data-mobile="true">
-                <span>Ocean</span>
-                <span class="variant-desc">Deep Blue</span>
-            </button>
-        </div>
-
-
-        <!-- Color Palette -->
-        <div class="section" id="palette">
-            <h2 class="section-title">Color Palette</h2>
-
-            <h3 style="color: #bba6f7; margin: 40px 0 20px; font-size: 1.4em;">Base Colors</h3>
-            <div class="color-grid">
-                <div class="color-box">
-                    <div class="color-swatch" style="background-color: #1e1e2e;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Background</div>
-                        <div class="color-hex">#1e1e2e</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" style="background-color: #252535;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Background Alt</div>
-                        <div class="color-hex">#252535</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" style="background-color: #e0dfe8;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Foreground</div>
-                        <div class="color-hex">#e0dfe8</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" style="background-color: #b8b5c9;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Foreground Alt</div>
-                        <div class="color-hex">#b8b5c9</div>
-                    </div>
-                </div>
-            </div>
-
-            <h3 style="color: #bba6f7; margin: 40px 0 20px; font-size: 1.4em;">Syntax Colors</h3>
-            <div class="color-grid">
-                <div class="color-box">
-                    <div class="color-swatch" data-color="lavender" style="background-color: #bba6f7;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Lavender</div>
-                        <div class="color-hex" data-color-hex="lavender">#bba6f7</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" data-color="sky" style="background-color: #91d7e3;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Sky</div>
-                        <div class="color-hex" data-color-hex="sky">#91d7e3</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" data-color="green" style="background-color: #a6e3a1;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Green</div>
-                        <div class="color-hex" data-color-hex="green">#a6e3a1</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" data-color="purple" style="background-color: #d5b8f5;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Purple</div>
-                        <div class="color-hex" data-color-hex="purple">#d5b8f5</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" data-color="peach" style="background-color: #fab387;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Peach</div>
-                        <div class="color-hex" data-color-hex="peach">#fab387</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" data-color="blue" style="background-color: #89b4fa;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Blue</div>
-                        <div class="color-hex" data-color-hex="blue">#89b4fa</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" data-color="yellow" style="background-color: #f5e5b8;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Yellow</div>
-                        <div class="color-hex" data-color-hex="yellow">#f5e5b8</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" data-color="red" style="background-color: #f5b5c8;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Rose</div>
-                        <div class="color-hex" data-color-hex="red">#f5b5c8</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" data-color="cyan" style="background-color: #7dd4ed;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Cyan</div>
-                        <div class="color-hex" data-color-hex="cyan">#7dd4ed</div>
-                    </div>
-                </div>
-                <div class="color-box">
-                    <div class="color-swatch" data-color="info" style="background-color: #a8b5f5;"></div>
-                    <div class="color-info">
-                        <div class="color-name">Info Blue</div>
-                        <div class="color-hex" data-color-hex="info">#a8b5f5</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Code Examples -->
-        <div class="section">
-            <h2 class="section-title">See It In Action</h2>
-
-
-            <h3 style="color: #89b4fa; margin: 30px 0 15px; font-size: 1.2em;">JavaScript</h3>
-            <div class="code-preview">
-                <span class="code-line"><span class="line-number">1</span><span class="comment">// Calculate fibonacci
-                        sequence</span></span>
-                <span class="code-line"><span class="line-number">2</span><span class="keyword">function</span> <span
-                        class="function">fibonacci</span><span class="fg">(</span><span class="variable">n</span><span
-                        class="fg">) {</span></span>
-                <span class="code-line"><span class="line-number">3</span> <span class="keyword">if</span> <span
-                        class="fg">(</span><span class="variable">n</span> <span class="operator">
-                        <=< /span> <span class="number">1</span><span class="fg">) </span><span
-                                class="keyword">return</span> <span class="variable">n</span><span class="fg">;</span>
-                    </span>
-                    <span class="code-line"><span class="line-number">4</span> <span class="keyword">return</span> <span
-                            class="function">fibonacci</span><span class="fg">(</span><span class="variable">n</span>
-                        <span class="operator">-</span> <span class="number">1</span><span class="fg">) </span><span
-                            class="operator">+</span> <span class="function">fibonacci</span><span
-                            class="fg">(</span><span class="variable">n</span> <span class="operator">-</span> <span
-                            class="number">2</span><span class="fg">);</span></span>
-                    <span class="code-line"><span class="line-number">5</span><span class="fg">}</span></span>
-                    <span class="code-line"><span class="line-number">6</span></span>
-                    <span class="code-line"><span class="line-number">7</span><span class="keyword">const</span> <span
-                            class="constant">MAX_ITERATIONS</span> <span class="operator">=</span> <span
-                            class="number">10</span><span class="fg">;</span></span>
-                    <span class="code-line"><span class="line-number">8</span><span class="keyword">const</span> <span
-                            class="variable">result</span> <span class="operator">=</span> <span
-                            class="function">fibonacci</span><span class="fg">(</span><span
-                            class="constant">MAX_ITERATIONS</span><span class="fg">);</span></span>
-                    <span class="code-line"><span class="line-number">9</span><span class="variable">console</span><span
-                            class="fg">.</span><span class="function">log</span><span class="fg">(</span><span
-                            class="string">`Result: ${result}`</span><span class="fg">);</span></span>
-            </div>
-
-            <h3 style="color: #89b4fa; margin: 40px 0 15px; font-size: 1.2em;">Python</h3>
-            <div class="code-preview">
-                <span class="code-line"><span class="line-number">1</span><span class="keyword">from</span> <span
-                        class="type">typing</span> <span class="keyword">import</span> <span
-                        class="type">List</span></span>
-                <span class="code-line"><span class="line-number">2</span></span>
-                <span class="code-line"><span class="line-number">3</span><span class="keyword">class</span> <span
-                        class="type">DataProcessor</span><span class="fg">:</span></span>
-                <span class="code-line"><span class="line-number">4</span> <span class="comment">"""Process and analyze
-                        data efficiently"""</span></span>
-                <span class="code-line"><span class="line-number">5</span> </span>
-                <span class="code-line"><span class="line-number">6</span> <span class="keyword">def</span> <span
-                        class="function">__init__</span><span class="fg">(</span><span class="variable">self</span><span
-                        class="fg">, </span><span class="variable">data</span><span class="operator">:</span> <span
-                        class="type">List</span><span class="fg">[</span><span class="type">int</span><span
-                        class="fg">]):</span></span>
-                <span class="code-line"><span class="line-number">7</span> <span class="variable">self</span><span
-                        class="fg">.</span><span class="variable">data</span> <span class="operator">=</span> <span
-                        class="variable">data</span></span>
-                <span class="code-line"><span class="line-number">8</span> <span class="variable">self</span><span
-                        class="fg">.</span><span class="constant">THRESHOLD</span> <span class="operator">=</span> <span
-                        class="number">100</span></span>
-                <span class="code-line"><span class="line-number">9</span> </span>
-                <span class="code-line"><span class="line-number">10</span> <span class="keyword">def</span> <span
-                        class="function">process</span><span class="fg">(</span><span class="variable">self</span><span
-                        class="fg">) </span><span class="operator">-></span> <span class="type">List</span><span
-                        class="fg">[</span><span class="type">int</span><span class="fg">]:</span></span>
-                <span class="code-line"><span class="line-number">11</span> <span class="keyword">return</span> <span
-                        class="fg">[</span><span class="variable">x</span> <span class="operator">*</span> <span
-                        class="number">2</span> <span class="keyword">for</span> <span class="variable">x</span> <span
-                        class="keyword">in</span> <span class="variable">self</span><span class="fg">.</span><span
-                        class="variable">data</span> <span class="keyword">if</span> <span class="variable">x</span>
-                    <span class="operator">
-                        << /span> <span class="variable">self</span><span class="fg">.</span><span
-                                class="constant">THRESHOLD</span><span class="fg">]</span>
-                    </span>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer>
-            <p>
-                <strong style="color: #bba6f7;">Zenith Colorscheme</strong> v5.0.0<br>
-                Made with <span style="color: #f5b5c8;">♥</span> for developers who care about aesthetics<br>
-                <a href="https://github.com/samonide/zenith">GitHub</a> ·
-                <a href="https://github.com/samonide/zenith/issues">Issues</a> ·
-                <a href="https://github.com/samonide/zenith/blob/main/LICENSE">MIT License</a>
-            </p>
-        </footer>
+    <!-- Mobile Floating Theme Button -->
+    <button class="mobile-theme-toggle" id="mobileThemeToggle">🎨</button>
+    <div class="mobile-theme-dropdown" id="mobileThemeDropdown">
+        <!-- Mobile theme buttons will be generated by JavaScript -->
     </div>
 
-    <script>
-        // Variant switching functionality
-        const variantButtons = document.querySelectorAll('.variant-btn');
-        const mobileVariantButtons = document.querySelectorAll('.mobile-variant-btn');
-        const mobileThemeToggle = document.getElementById('mobileThemeToggle');
-        const mobileThemeDropdown = document.getElementById('mobileThemeDropdown');
-        let currentVariant = 'dusk';
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/samonide/zenith">GitHub</a>
+            <a href="https://github.com/samonide/zenith/issues">Issues</a>
+            <a href="https://github.com/samonide/zenith/blob/main/LICENSE">License</a>
+        </div>
+        <p class="footer-note">
+            Zenith v6.0.0 • Base46 Architecture • MIT Licensed
+        </p>
+    </footer>
 
-        // Mobile theme toggle functionality
-        mobileThemeToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            mobileThemeDropdown.classList.toggle('active');
-            mobileThemeToggle.classList.toggle('active');
+    <script>
+        const themes = [
+            { name: 'dusk', icon: '🌙', desc: 'Deep purples with soft pastels', colors: ['#bba6f7', '#89b4fa', '#f5c2e7', '#94e2d5', '#a6e3a1', '#f9e2af', '#fab387', '#f38ba8'] },
+            { name: 'dawn', icon: '☀️', desc: 'Warm sunrise hues', colors: ['#d4a574', '#ea9d74', '#ec8989', '#b58fb5', '#94e2d5', '#f9e2af', '#f5c2e7', '#a6e3a1'] },
+            { name: 'aurora', icon: '✨', desc: 'Vibrant northern lights', colors: ['#c4a7e7', '#89b4fa', '#9ccfd8', '#a6e3a1', '#f6c177', '#ea9a97', '#f5c2e7', '#94e2d5'] },
+            { name: 'rose', icon: '🌸', desc: 'Cozy rose-tinted warmth', colors: ['#c4a7e7', '#9ccfd8', '#ea9a97', '#f6c177', '#a6e3a1', '#89b4fa', '#f5c2e7', '#94e2d5'] },
+            { name: 'ocean', icon: '🌊', desc: 'Cool deep sea blues', colors: ['#7aa2f7', '#2ac3de', '#7dcfff', '#9ece6a', '#73daca', '#e0af68', '#bb9af7', '#f7768e'] },
+            { name: 'forest', icon: '🌲', desc: 'Natural earthy greens', colors: ['#81c995', '#9de0ad', '#89c0eb', '#ebc99d', '#c4a7c5', '#eb9f9f', '#94e2d5', '#f9e2af'] },
+            { name: 'midnight', icon: '🌑', desc: 'Pure deep darkness', colors: ['#7986a8', '#6fa3b8', '#89a0c8', '#8fa888', '#b8a07a', '#c89090', '#a88fb8', '#94e2d5'] },
+            { name: 'zen', icon: '🧘', desc: 'Minimal monochrome calm', colors: ['#c8b4b4', '#b4c8bc', '#b8c0cc', '#c4b8cc', '#c0c0c8', '#c8c0b8', '#bcbcc8', '#c0c8c0'] }
+        ];
+
+        const themeGrid = document.querySelector('.theme-grid');
+        const mobileDropdown = document.getElementById('mobileThemeDropdown');
+        const mobileToggle = document.getElementById('mobileThemeToggle');
+
+        // Generate desktop theme cards
+        themes.forEach((theme, index) => {
+            const card = document.createElement('div');
+            card.className = 'theme-card';
+            if (index === 0) card.classList.add('active');
+            card.setAttribute('data-theme', theme.name);
+
+            const preview = document.createElement('div');
+            preview.className = 'theme-preview';
+            preview.innerHTML = `
+                <div style="display: flex; gap: 12px; margin-bottom: 8px;">
+                    <span style="color: ${theme.colors[0]}; font-weight: 600;">function</span>
+                    <span style="color: ${theme.colors[1]}; font-weight: 600;">greet</span>
+                    <span style="color: ${theme.colors[3]};">(</span>
+                    <span style="color: ${theme.colors[2]};">name</span>
+                    <span style="color: ${theme.colors[3]};">)</span>
+                    <span style="color: ${theme.colors[3]};">{</span>
+                </div>
+                <div style="padding-left: 24px;">
+                    <span style="color: ${theme.colors[0]}; font-weight: 600;">return</span>
+                    <span style="color: ${theme.colors[4]};">\`Hello, \${</span><span style="color: ${theme.colors[2]};">name</span><span style="color: ${theme.colors[4]};">}\`</span>
+                </div>
+                <div style="color: ${theme.colors[3]};">}</div>
+                <div style="margin-top: 16px; opacity: 0.4; font-size: 12px;">// ${theme.desc}</div>
+            `;
+
+            const info = document.createElement('div');
+            info.className = 'theme-info';
+
+            const name = document.createElement('div');
+            name.className = 'theme-name';
+            name.innerHTML = `<span>${theme.icon}</span><span>${theme.name.charAt(0).toUpperCase() + theme.name.slice(1)}</span>`;
+
+            const desc = document.createElement('div');
+            desc.className = 'theme-desc';
+            desc.textContent = theme.desc;
+
+            const palette = document.createElement('div');
+            palette.className = 'color-palette';
+            theme.colors.forEach(color => {
+                const dot = document.createElement('div');
+                dot.className = 'color-dot';
+                dot.style.backgroundColor = color;
+                palette.appendChild(dot);
+            });
+
+            info.appendChild(name);
+            info.appendChild(desc);
+            info.appendChild(palette);
+
+            card.appendChild(preview);
+            card.appendChild(info);
+            themeGrid.appendChild(card);
+
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.theme-card').forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+                loadTheme(theme.name);
+            });
+        });
+
+        // Generate mobile theme buttons
+        themes.forEach((theme, index) => {
+            const btn = document.createElement('button');
+            btn.className = 'mobile-variant-btn';
+            if (index === 0) btn.classList.add('active');
+            btn.setAttribute('data-theme', theme.name);
+
+            btn.innerHTML = `
+                <span class="variant-icon">${theme.icon}</span>
+                <div class="variant-info">
+                    <span class="variant-name">${theme.name.charAt(0).toUpperCase() + theme.name.slice(1)}</span>
+                    <span class="variant-desc">${theme.desc}</span>
+                </div>
+            `;
+
+            mobileDropdown.appendChild(btn);
+
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.mobile-variant-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                loadTheme(theme.name);
+                // Close dropdown after selection
+                mobileDropdown.classList.remove('active');
+                mobileToggle.classList.remove('active');
+            });
+        });
+
+        // Mobile toggle functionality
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            mobileDropdown.classList.toggle('active');
         });
 
         // Close dropdown when clicking outside
         document.addEventListener('click', (e) => {
-            if (!mobileThemeDropdown.contains(e.target) && !mobileThemeToggle.contains(e.target)) {
-                mobileThemeDropdown.classList.remove('active');
-                mobileThemeToggle.classList.remove('active');
+            if (!mobileToggle.contains(e.target) && !mobileDropdown.contains(e.target)) {
+                mobileDropdown.classList.remove('active');
+                mobileToggle.classList.remove('active');
             }
         });
 
-        async function loadVariant(variantName) {
+        async function loadTheme(themeName) {
             try {
-                const response = await fetch(`colors-${variantName}.json`);
-                const colorData = await response.json();
-                applyColorScheme(colorData);
-                currentVariant = variantName;
+                const response = await fetch(`colors-${themeName}.json`);
+                const data = await response.json();
+                applyTheme(data.base_30);
             } catch (error) {
-                console.error('Error loading variant:', error);
+                console.error('Error loading theme:', error);
             }
         }
 
-        function applyColorScheme(colorData) {
+        function applyTheme(colors) {
             const root = document.documentElement;
-            const colors = colorData.colors;
-
-            // Apply base colors
-            document.body.style.backgroundColor = colors.base.bg;
-            document.body.style.color = colors.base.fg;
-
-            // Update all sections
-            document.querySelectorAll('.section').forEach(el => {
-                el.style.backgroundColor = colors.base.bg;
-                el.style.borderColor = colors.ui.border;
-            });
-
-            // Update code previews
-            document.querySelectorAll('.code-preview').forEach(el => {
-                el.style.backgroundColor = colors.base.bg;
-                el.style.borderColor = colors.ui.border;
-            });
-
-            // Update color boxes
-            document.querySelectorAll('.color-box').forEach(el => {
-                el.style.borderColor = colors.ui.border;
-            });
-
-            // Update color info sections
-            document.querySelectorAll('.color-info').forEach(el => {
-                el.style.backgroundColor = colors.base.bgAlt;
-            });
-
-            // Update feature cards
-            document.querySelectorAll('.feature-card').forEach(el => {
-                el.style.backgroundColor = colors.base.bgAlt;
-                el.style.borderColor = colors.ui.border;
-            });
-
-            // Update UI boxes
-            document.querySelectorAll('.ui-box').forEach(el => {
-                el.style.backgroundColor = colors.base.bgAlt;
-                el.style.borderColor = colors.ui.border;
-            });
-
-            // Update syntax highlighting using the mapping
-            const mapping = colorData.mapping;
-            const getColor = (colorName) => {
-                if (colorName === 'comment') return colors.ui.comment;
-                if (colorName === 'fg') return colors.base.fg;
-                if (colorName === 'fgAlt') return colors.base.fgAlt;
-                if (colorName === 'fgDark') return colors.base.fgDark;
-                return colors.syntax[colorName] || colors.base.fg;
-            };
-
-            document.querySelectorAll('.keyword').forEach(el => el.style.color = getColor(mapping.keywords));
-            document.querySelectorAll('.type').forEach(el => el.style.color = getColor(mapping.types));
-            document.querySelectorAll('.string').forEach(el => el.style.color = getColor(mapping.strings));
-            document.querySelectorAll('.variable').forEach(el => el.style.color = getColor(mapping.variables));
-            document.querySelectorAll('.constant').forEach(el => el.style.color = getColor(mapping.constants));
-            document.querySelectorAll('.function').forEach(el => el.style.color = getColor(mapping.functions));
-            document.querySelectorAll('.comment').forEach(el => el.style.color = getColor(mapping.comments));
-            document.querySelectorAll('.operator').forEach(el => el.style.color = getColor(mapping.operators));
-            document.querySelectorAll('.number').forEach(el => el.style.color = getColor(mapping.numbers));
-            document.querySelectorAll('.fg').forEach(el => el.style.color = colors.base.fg);
-            document.querySelectorAll('.line-number').forEach(el => el.style.color = colors.base.fgDark);
-
-            // Update text colors
-            document.querySelector('h1').style.color = colors.syntax.lavender;
-            document.querySelectorAll('.section-title').forEach(el => el.style.color = colors.syntax.purple);
-            document.querySelectorAll('.feature-title').forEach(el => el.style.color = colors.syntax.purple);
-            document.querySelectorAll('.section-subtitle, .tagline, .feature-desc').forEach(el => el.style.color = colors.base.fgAlt);
-            document.querySelectorAll('.color-name').forEach(el => el.style.color = colors.base.fg);
-            document.querySelectorAll('.color-hex').forEach(el => el.style.color = colors.base.fgAlt);
-            document.querySelectorAll('.ui-title').forEach(el => el.style.color = colors.diagnostic.info);
-
-            // Update footer
-            document.querySelector('footer').style.color = colors.base.fgDark;
-
-            // Update diagnostic colors
-            document.querySelectorAll('.diagnostic-error').forEach(el => el.style.color = colors.diagnostic.error);
-            document.querySelectorAll('.diagnostic-warning').forEach(el => el.style.color = colors.diagnostic.warning);
-            document.querySelectorAll('.diagnostic-info').forEach(el => el.style.color = colors.diagnostic.info);
-            document.querySelectorAll('.diagnostic-hint').forEach(el => el.style.color = colors.diagnostic.hint);
-
-            // Update git colors
-            document.querySelectorAll('.git-add').forEach(el => el.style.color = colors.git.add);
-            document.querySelectorAll('.git-change').forEach(el => el.style.color = colors.git.change);
-            document.querySelectorAll('.git-delete').forEach(el => el.style.color = colors.git.delete);
-
-            // Update color palette swatches dynamically
-            document.querySelectorAll('[data-color]').forEach(swatch => {
-                const colorName = swatch.dataset.color;
-                let colorValue;
-
-                // Map color names to their values from the JSON
-                if (colorName === 'info') {
-                    colorValue = colors.diagnostic.info;
-                } else if (colors.syntax[colorName]) {
-                    colorValue = colors.syntax[colorName];
-                }
-
-                if (colorValue) {
-                    swatch.style.backgroundColor = colorValue;
-                }
-            });
-
-            // Update color hex text
-            document.querySelectorAll('[data-color-hex]').forEach(hexEl => {
-                const colorName = hexEl.dataset.colorHex;
-                let colorValue;
-
-                if (colorName === 'info') {
-                    colorValue = colors.diagnostic.info;
-                } else if (colors.syntax[colorName]) {
-                    colorValue = colors.syntax[colorName];
-                }
-
-                if (colorValue) {
-                    hexEl.textContent = colorValue;
-                }
-            });
-
-            // Update variant selector buttons for light theme
-            const isDark = colorData.type !== 'light';
-            document.querySelectorAll('.variant-btn').forEach(btn => {
-                const isActive = btn.classList.contains('active');
-                if (isActive) {
-                    // Active button always gets pastel purple
-                    btn.style.background = '#bba6f7';
-                    btn.style.borderColor = '#bba6f7';
-                    btn.style.color = '#1e1e2e';
-                } else {
-                    // Inactive buttons adapt to theme
-                    if (isDark) {
-                        btn.style.background = colors.base.bgAlt;
-                        btn.style.borderColor = colors.ui.border;
-                        btn.style.color = colors.base.fgAlt;
-                    } else {
-                        btn.style.background = '#ffffff';
-                        btn.style.borderColor = colors.ui.border;
-                        btn.style.color = colors.base.fg;
-                    }
-                }
-            });
-
-            // Update mobile dropdown styling
-            mobileThemeDropdown.style.backgroundColor = colors.base.bgAlt;
-            mobileThemeDropdown.style.borderColor = colors.ui.border;
-
-            document.querySelectorAll('.mobile-variant-btn').forEach(btn => {
-                const isActive = btn.classList.contains('active');
-                if (!isActive) {
-                    btn.style.background = colors.base.bg;
-                    btn.style.borderColor = colors.ui.border;
-                    btn.style.color = colors.base.fgAlt;
-                }
-            });
+            root.style.setProperty('--bg', colors.black);
+            root.style.setProperty('--bg-elevated', colors.one_bg);
+            root.style.setProperty('--text', colors.white);
+            root.style.setProperty('--text-dim', colors.grey_fg);
+            root.style.setProperty('--accent', colors.purple);
+            root.style.setProperty('--blue', colors.blue);
+            root.style.setProperty('--green', colors.green);
+            root.style.setProperty('--red', colors.red);
+            root.style.setProperty('--yellow', colors.yellow);
+            root.style.setProperty('--teal', colors.teal);
+            root.style.setProperty('--orange', colors.orange);
+            root.style.setProperty('--pink', colors.pink);
         }
 
-        // Desktop variant buttons
-        variantButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                variantButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const variant = btn.dataset.variant;
-                loadVariant(variant);
-            });
+        // Load default theme
+        window.addEventListener('DOMContentLoaded', () => {
+            loadTheme('dusk');
         });
-
-        // Mobile variant buttons
-        mobileVariantButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                mobileVariantButtons.forEach(b => b.classList.remove('active'));
-                variantButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                // Sync with desktop buttons
-                const variant = btn.dataset.variant;
-                const desktopBtn = document.querySelector(`.variant-btn[data-variant="${variant}"]`);
-                if (desktopBtn) desktopBtn.classList.add('active');
-
-                loadVariant(variant);
-
-                // Close dropdown after selection
-                mobileThemeDropdown.classList.remove('active');
-                mobileThemeToggle.classList.remove('active');
-            });
-        });
-
-        // Load default theme (Dusk) on page load
-        loadVariant('dusk');
     </script>
 </body>
 

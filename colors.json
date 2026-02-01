@@ -1,14 +1,25 @@
 {
     "name": "Zenith",
-    "description": "A soothing soft pastel colorscheme designed for comfortable long coding sessions",
+    "description": "Professional colorscheme collection with base46 architecture - aesthetically soothing pastels for comfortable long coding sessions",
     "author": "samonide",
-    "version": "5.0.0",
+    "version": "6.0.0",
+    "architecture": "base46",
+    "structure": {
+        "base_30": "30 semantic color tokens for theme personality",
+        "base_16": "16 standardized base16 colors for universal compatibility"
+    },
+    "philosophy": {
+        "backgrounds": "Minimal and comfortable - not too dark, not too bright",
+        "syntax": "Distinct pastel colors with proper contrast for readability",
+        "focus": "Designed for long coding sessions without eye strain",
+        "aesthetic": "Beautiful and soothing without being distracting"
+    },
     "variants": [
         {
             "name": "Dusk",
             "variant": "dusk",
             "type": "dark",
-            "description": "The original - a soft pastel dark theme",
+            "description": "The flagship - perfectly balanced soft pastels for comfortable all-day coding",
             "file": "colors-dusk.json",
             "default": true
         },
@@ -16,36 +27,50 @@
             "name": "Dawn",
             "variant": "dawn",
             "type": "light",
-            "description": "A bright and airy light variant",
+            "description": "Elegant light theme with soft pastels - gentle on the eyes for daytime coding",
             "file": "colors-dawn.json"
         },
         {
-            "name": "Twilight",
-            "variant": "twilight",
+            "name": "Aurora",
+            "variant": "aurora",
             "type": "dark",
-            "description": "A deeper, moodier dark variant",
-            "file": "colors-twilight.json"
+            "description": "Northern lights magic - ethereal teals, soft pinks, and dreamy lavenders",
+            "file": "colors-aurora.json"
         },
         {
-            "name": "Forest",
-            "variant": "forest",
+            "name": "Rosé",
+            "variant": "rose",
             "type": "dark",
-            "description": "Calm earthy green-gray tones",
-            "file": "colors-forest.json"
-        },
-        {
-            "name": "Monochrome",
-            "variant": "monochrome",
-            "type": "dark",
-            "description": "Minimal ultra-low contrast for pure focus in darkness",
-            "file": "colors-monochrome.json"
+            "description": "Warm and cozy - soft pinks, peachy tones, and gentle warmth for comfort",
+            "file": "colors-rose.json"
         },
         {
             "name": "Ocean",
             "variant": "ocean",
             "type": "dark",
-            "description": "Serene deep blue ocean depths",
+            "description": "Deep serene waters - calming blues and aqua tones for tranquil focus",
             "file": "colors-ocean.json"
+        },
+        {
+            "name": "Forest",
+            "variant": "forest",
+            "type": "dark",
+            "description": "Natural earthiness - organic greens and browns for grounded productivity",
+            "file": "colors-forest.json"
+        },
+        {
+            "name": "Midnight",
+            "variant": "midnight",
+            "type": "dark",
+            "description": "Deep darkness - high contrast pastels for late-night coding sessions",
+            "file": "colors-midnight.json"
+        },
+        {
+            "name": "Zen",
+            "variant": "zen",
+            "type": "dark",
+            "description": "Ultra minimal - pure focus mode with subtle monochrome elegance",
+            "file": "colors-zen.json"
         },
         {
             "name": "Aurora",
